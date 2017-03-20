@@ -1,0 +1,46 @@
+
+public class MyList<T> implements LinkedList<T>{
+	Node<T> start;
+	
+	//empty constructor
+	public MyList(){
+		
+	}
+	
+	//Insert data. O(n). Runs through the list and inserts at the end.
+	public void insert(T x) {
+		Node<T> at = start;
+		while(at.next != null){
+			at = at.next;
+		}
+		at.next = new Node<T>(x);
+	}
+
+	public void delete(T x) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean lookup(T x) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isEmpty() {
+		if(start == null) return true;
+		return false;
+	}
+
+	public void printList() {
+		//
+		Node<T> at = start;
+		while(at.next != null){
+			at = at.next;
+			System.out.print(at.data);
+		}
+		System.out.println();
+		
+	}
+	
+	
+}

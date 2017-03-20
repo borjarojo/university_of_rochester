@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red15\green111\blue1;\red0\green0\blue255;\red135\green0\blue2;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 * /Users/borjarojo/Documents/LTspice/Draft1.asc\
+*Components\cf0 \
+M1 N002 N003 0 0 NMOS0P5 l=.6U w=200U\
+R1 N001 N003 24500\
+Vout N002 0 .881 AC .2 0\
+Vdd N001 0 3.3V\
+M2 N003 N003 0 0 NMOS0P5 l=.6U w=20U\
+\
+*models\
+\cf3 .model NMOS NMOS\cf0 \
+\cf3 .model PMOS PMOS\cf0 \
+\cf3 .lib /Users/borjarojo/Library/Application Support/LTspice/lib/cmp/standard.mos\cf0 \
+\cf3 .model	NMOS0P5	NMOS(Level=1 VTO=0.7 GAMMA=0.5 PHI=0.8\cf0 \
+\cf4 +		LD=0.08E-06 WD=0 UO=460 LAMBDA=0.1 TOX=9.5E-9 PB=0.9 CJ=0.57E-3\cf0 \
+\cf4 +		CJSW=120E-12 MJ=0.5 MJSW=0.4 CGDO=0.4E-9 JS=10E-9 CGBO=0.38E-9\cf0 \
+\cf4 +		CGSO=0.4E-9)\
+\
+*measurements\cf0 \
+\cf3 .OP\cf0 \
+\cf3 .AC DEC 1000 1 1MEG\cf0 \
+\cf3 .MEAS TRAN Iout FIND I(M1) WHEN V(N002)\cf0 \
+\cf3 .backanno\cf0 \
+\cf3 .end\cf0 \
+}

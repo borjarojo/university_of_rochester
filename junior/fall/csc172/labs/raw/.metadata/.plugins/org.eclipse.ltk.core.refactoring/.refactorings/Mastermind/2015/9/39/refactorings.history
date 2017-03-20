@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;code&apos; in &apos;Codebreaker&apos; to &apos;codes&apos;&#x0A;- Original project: &apos;Mastermind&apos;&#x0A;- Original element: &apos;Codebreaker.code&apos;&#x0A;- Renamed element: &apos;Codebreaker.codes&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;code&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Codebreaker.java[Codebreaker^code" name="codes" references="true" setter="false" stamp="1442973358039" textual="false" version="1.0"/>
+</session>

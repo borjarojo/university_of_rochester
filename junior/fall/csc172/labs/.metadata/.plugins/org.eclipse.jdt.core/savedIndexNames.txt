@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/Users/borjarojo/Documents/university_of_rochester/junior/firstsemester/csc172/labs/.metadata/.plugins/org.eclipse.jdt.core
+3168708893.index
+592963367.index

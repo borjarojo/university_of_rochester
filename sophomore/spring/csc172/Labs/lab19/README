@@ -1,0 +1,28 @@
+Borja Rojo
+brojo@u.rochester.edu
+CSC 172
+Lab 19
+Daniel Saltz
+4/19/15
+
+Java Files: Edge.java, Graph.java, MainClass.java, Vertex.java
+Test Files: 9.10.txt, 9.17.txt, 9.62.txt, test1.txt, test2.txt, test3.txt
+
+Edge.java holds the code that defines and edge in my graph. It holds two
+ints and is directed.
+
+Graph.java holds the code that defines my graph. It has an adjacency list
+and a Vertex array. It also can be either directed or undirected.
+
+Vertex.java is a small class that defines my vertex to allow my mark data
+as the program works on the graph.
+
+MainClass.java is my main class that handles reading and executing the
+required methods.
+
+This project was an exercize in finding the shortest path from a specified
+to any other node. This was done by reading a file that held a form to create
+a graph. Then, a vertex was chosen to begin the path mapping. Then, the 
+program ran an algorithm to sort the graph accordingly. Then, the another
+point is chosen to check what the shortest path it that goes from the starting
+point to the chosen point.

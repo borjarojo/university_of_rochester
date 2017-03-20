@@ -1,0 +1,9 @@
+package "ros_navigator"
+version "1.0"
+purpose "Navigator .ggo file"
+option "linearVelocity" - "l" double default="0.5" optional
+option "angularVelocity" - "a" double default="0.0" optional
+option "time" - "t" double default="3.0" optional
+option "rate" - "r" double default="10" optional
+option "fileOutputName" - "f" string default="sub_output" optional
+option "set" - "s" int default="0" optional

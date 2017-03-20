@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inline-block example</title>
+	<style>
+	/*	*****************************
+		Styles for demo purposes only 
+		***************************** */
+	header, article, aside, footer { padding: 2%; }
+	header { background-color: #eeeeee; }
+	article { background-color: #cccccc; }
+	aside { background-color: #bbddee; }
+	footer { background-color: #eeeeee; }
+
+	/*	*****************************
+		Demo styles for: Inline-block layout
+		***************************** */
+	article, aside { 
+		display: inline-block; 
+		vertical-align: top;
+	}
+	article { width: 66%; }
+	aside { width: 26%; }
+	/* NOTE: in the HTML, you must 'comment-out' the space between the side-by-side elements (between the ARTICLE and ASIDE elements) else the math won't work out */
+	</style>
+</head>
+<body>
+
+<header><strong>Header</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</header>
+
+<section>
+
+	<article>
+		<strong>Article</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+	</article><!-- 
+comment-out the space between these elements
+ --><aside>
+		<strong>Aside</strong> Nisi ut aliquip ex ea commodo consequat. 
+	</aside>
+
+</section>
+
+<footer><strong>Footer</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </footer>
+
+</body>
+</html>

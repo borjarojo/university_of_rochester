@@ -1,0 +1,116 @@
+
+public class MainTest {
+
+	public static void main(String[]args){
+		//Declare
+		Integer[] intArry = {new Integer(1),
+				new Integer(2),
+				new Integer(3),
+				new Integer(4),
+				new Integer(5)};
+		Double[] doubArry = {new Double(1.1),
+				new Double(2.2),
+				new Double(3.3),
+				new Double(4.4),
+				new Double(5.5)};
+		Character[] charArray = {new Character('H'),
+				new Character('E'),
+				new Character('L'),
+				new Character('L'),
+				new Character('O')};
+		String[] strArray = {"once",
+				"upon",
+				"a",
+				"time"};
+		
+		//Print
+		printarray(intArry);
+		printarray(doubArry);
+		printarray(charArray);
+		printarray(strArray);
+		
+		System.out.println("max Integer is: " + getMax(intArry));
+		System.out.println("max Double is: " + getMax(doubArry));
+		System.out.println("max Character is: " + getMax(charArray));
+		System.out.println("max String is: " + getMax(strArray));
+	}
+	
+	//Object printArray
+	/*
+	public static void printarray(Object[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	*/
+	/*
+	//Overloaded printArray Methods
+	public static void printarray(Integer[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void printarray(Double[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void printarray(Character[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void printarray(String[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	*/
+	
+	public static <T> void printarray(T[] array){
+		for(int i = 0; i < array.length; i++){
+			System.out.print(array[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	
+	/*
+	 * Description	Resource	Path	Location	Type
+Build path specifies execution environment J2SE-1.5. There are no JREs installed in the workspace that are strictly compatible with this environment. 	Generics		Build path	JRE System Library Problem
+Type safety: The method compareTo(Object) belongs to the raw type Comparable. References to generic type Comparable<T> should be parameterized	MainTest.java	/Generics/src	line 91	Java Problem
+Comparable is a raw type. References to generic type Comparable<T> should be parameterized	MainTest.java	/Generics/src	line 89	Java Problem
+Comparable is a raw type. References to generic type Comparable<T> should be parameterized	MainTest.java	/Generics/src	line 88	Java Problem
+Comparable is a raw type. References to generic type Comparable<T> should be parameterized	MainTest.java	/Generics/src	line 88	Java Problem
+
+	 */
+	/*
+	public static Comparable getMax(Comparable[] array){
+		Comparable thing = array[0];
+		for(int i = 0; i < array.length; i++){
+			if(array[i].compareTo(thing) == 1)
+				thing = array[i];
+		}
+		return thing;
+	}
+	*/
+	
+	public static <T extends Comparable<? super T>> Comparable<T> getMax(T[] array){
+		T thing = array[0];
+		
+		for(int i = 0; i < array.length; i++){
+			if(thing.compareTo(array[i]) == -1)
+				thing = array[i];
+		}
+		
+		return thing;
+	}
+	
+}

@@ -1,0 +1,10 @@
+%{
+This fuction will produce a vector with values corresponding to the
+function givin in HW2.
+
+It takes two numbers that represent the bounds of the domain
+%}
+function y = hw2_m(t1, t2)
+    T = 
+    y = 2*sinc(2*t/T) + sinc((2*t/T) + 1) + sinc(2*t/(T-1));
+end

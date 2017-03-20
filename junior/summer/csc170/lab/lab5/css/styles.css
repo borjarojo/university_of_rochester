@@ -1,0 +1,72 @@
+body {
+	background-color: #dfeff0;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*
+My container for my body things
+*/
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;	
+}
+/*
+This info block is what I used as my container.
+My code has multiple articles, each with thier own set of information.
+I used the info bloc to group them, which I then gave the following proterties.
+This allowed me to group my information side by side with my "aside" info,
+while keeping the spereate articles containable.
+*/
+.info {
+	display: table-cell;
+}
+
+/*
+I didn't like the spacing of my articles to my aside,
+but i still wanted to keep my aside TO the side.
+I added some padding on the left to give it space,
+no matter what the size of the page is.
+*/
+aside {
+	display: table-cell;
+	padding-left: 20px;
+}
+
+header {
+	color: #ad235e;
+	border-bottom: 1px solid #ad235e;
+}
+
+footer {
+	color: #ad235e;
+	border-top: 1px solid #ad235e;
+}
+
+h2 {
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-top: 0px;
+}
+
+figure {
+	float: right;
+	margin-left: 20px;
+}
+
+ol, ul {
+	padding-left: 15px;
+}
+
+a {
+	color: #7d9c9f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ad235e;
+}

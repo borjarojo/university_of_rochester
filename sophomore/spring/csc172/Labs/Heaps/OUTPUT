@@ -1,0 +1,27 @@
+Borja Rojo
+CSC 172
+
+Run Code: Compile in the command line and run
+
+Size Test:
+10
+isEmpty() test
+true
+
+10
+20
+Inserting...
+
+Printing...
+2 6 3 8 11 7 6 13 14 5 19 15 12 17 9 16 
+
+deleteMin():
+2
+deleteMin():
+3
+deleteMin():
+6
+deleteMin():
+6
+deleteMin():
+7

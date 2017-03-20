@@ -1,0 +1,13 @@
+Borja Rojo
+brojo@u.rochester.edu
+CSC 172
+Project 4
+
+Compile and run MainTest.java in the command line with the corresponding flags
+
+Note, the Show and Meridianmap flags will not work.
+
+OUTPUT:
+
+Shortest Path: i82 i81 SPURRIER i79 GOERGEN-ATHLETIC i54 i29 i28 i40 i21 i15 i13 i8 
+Distance: 0.006711829693001262

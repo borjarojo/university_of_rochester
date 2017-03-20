@@ -1,0 +1,29 @@
+Borja Rojo
+brojo@u.rochester.edu
+CSC 172
+Project 4
+
+Java Files: AdjList.java, Edge.java, Graph.java, MainTest.java, MapFrame.java, MapPanel.java, MapReader.java, Node.java
+Map Files: monroe.txt, nys.txt, ur_campus.txt
+
+My code does not run after Dijkstra's. I could not get the MWST to work correctly,
+nor could I correctly get the graphics to work either.
+
+To solve the issue of creating the graph, I created a separate MapReader class that
+handles aquiring all the data that can be from the map files. It extracts the amount
+of intersections and connections, as well as creates arrays that hold those
+intersections and connections in order. Details about how this is done can be seen
+the comments of my code.
+
+Then, I used this data from a MapReader object to create a corresponding graph. I used
+the intersection count in the constuctor and separately added the edges using the edge
+array. Details of how this is done can be seen in the comments of my code.
+
+Within my graph object, I used Dijkstra's algorithm on my graph and stored an array
+with the shortest path ordering and a double with the shortest distance. Details of 
+how I did this can be seen in the comment of my code.
+
+A prevalent idea I used throughout this code is the idea of an Index. I kept track of
+each intersection by indexing each one as they were read from the file. This way, I
+could run through my adjacency list and other arrays with the knowledge that I know
+the indexes from my Node objects match the index in my array.

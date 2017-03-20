@@ -1,0 +1,14 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 2
+
+This assignment asks to create multiple computer programs to complete various tasks.
+The first program shows the results of four arithmetic operations between two numbers.
+The second program converts Fahrenheit temperatures to Celsius.
+The third program does the same as the second, except it uses windows from JOptionPane
+to display and recieve input for and from the user.
+The fourth program reads a certain number of seconds in terms of hours, minutes, and seconds.
+The fifth program helps estimate the population size of a future population.
+
+This code was written in Eclipse.

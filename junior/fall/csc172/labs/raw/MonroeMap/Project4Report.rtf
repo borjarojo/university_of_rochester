@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Borja Rojo\
+brojo@u.rochester.edu\
+Project 4 Report\
+\
+RUN THIS IN ECLIPSE PLEASE\
+\
+My code is rather straight forward, especially considering that I was not able to implement MWST nor the Graphics to this project. No matter what I did, I could not get Prim\'92s to work in a reasonable amount of time. By that, I mean that I was not able to to ever finish Prim\'92s and get a MWST.\
+\
+I have 5 files, of which mostly 4 are used. I have included, AdjList.java (Not really used), Edge.java, Graph.java, StreeMapping.java, Vertex.java\
+\
+Graph.java hold all the code needed for the graphical analysis. It is built on the idea of being able to access ID\'92d objects in constant time using a Hash Table structure. I have both an Edge and a Vertex array that is built this way. Then, I implemented Dijkstra\'92s as I have in the Dijkstra\'92s lab, using the sudo code given by the book. Because of my change in data structure, I had to make many helper functions to emulate the given sudo code. All in all, Dijkstra\'92s runs pretty quickly. Comments in my code will further explain how it works. In here, I also tried to implement a Prim\'92s algorithm for a MWST. I was not successful. I\'92m not sure why, because I feel like I did implement the algorithm correctly. I\'92m nor sure if it\'92s supposed to take SO long to calculate, but I waited upwards of 5 minutes for it to finish and it did not. Graphics, of course as you can see, are not available. I couldn\'92t figure out how to render the map to scale and aligned. I doesn\'92t help that this course didn\'92t have any practice with Graphics, and the last time I did them was almost 2 years ago. Hopefully a well implemented Dijkstra\'92s is worthy of some points.\
+\
+Vertex.java is the class that defines my vertices. It has a String id that hold the name of the vertex, acquired at read in. It also has two doubles x and y that correspond to the x and y coordinates, also acquired at read in. Then, I have many variables set in order to be able use Dijkstra\'92s straight from a copy of the read in vertices. As used in the book, there is a boolean known to check if a path has been determined, a double dist to hold the distance of the vertex, and a Vertex to the point where it\'92s path comes from.\
+\
+Edge.java also has similar aspects. There is a String id to hold that name, a int num that hold the index of the Edge, two strings v and w that hold the id\'92s of the starting and ending point of the Edge, and a double that holds the weight of the Edge. One of the things that I did not do, which I think I should have, was hold two corresponding Vertices in the edge class. this one have been beneficial, I think, because i may have been able to let me move through my Graph with more ease.\
+\
+The other important file is StreetMapping.java, which holds my main(). Here, I read in the file for the project and quarry the user to find the shortest path from one intersection to the other. I also print the roads that go alone with that path.\
+\
+Because I used Dijkstra\'92s and constant time access, the \uc0\u937 () of my function is \u937 (E + Vlog(V)), where E is my edge count and V is my vertex count. There are also a lot of if(x != null) statements, which is a design flaw I think, that make my code run a bit slower. of course, the respective addition of running through many of these if statements is very small, but it may have an impact as data sets increase to the millions.\
+\
+The comments in my code explain things like how I printed and such. I implemented what I could, so please be conciderate of that.}

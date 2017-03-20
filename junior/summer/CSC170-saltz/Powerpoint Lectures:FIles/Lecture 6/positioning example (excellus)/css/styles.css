@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+a:hover img {
+    opacity: 0.7;
+    transition: opacity 0.25s ease 0s;
+}
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+.lorem { border: 1px solid hotpink; }
+.container {
+	margin: 0 auto;
+	width: 90%;
+	display: flex; 
+	flex-flow: wrap; 
+}
+
+/* ==========================================================================
+   Modules - Flexbox on an unordered list
+   ========================================================================== */
+ul.box-container {
+	display: flex; 
+	flex-flow: wrap; 
+	justify-content:center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.box-container > li {
+	position: relative;
+	border: 1px solid #a3a3a3;
+	margin: 30px 10px 10px;
+	padding: 25px;
+	width: 200px;
+	font-size: 0.75em;
+}
+ul.box-container > li > img.box-icon {
+	position: absolute;
+	top: -20px;
+	left: 80px;
+}
+
+
+/* ==========================================================================
+   Layout - HERO
+   ========================================================================== */
+#hero {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	background-image: url("../images/hero.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120px;
+	padding: 2em;
+}
+#hero a { 
+	margin-right: 15px;
+	padding-right: 20px;
+	border-right: 1px solid #000000;
+}
+@media (max-width: 485px) {
+	#hero a { border-right: none; }
+}
+#hero h1 { 
+	margin: 0.25em 0 0 0;
+	font-family: arial, helvetica, sans-serif;
+	color: rgb(0, 102, 204);
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/* ==========================================================================
+   Layout - MAIN
+   ========================================================================== */
+#content { 
+	padding: 140px 1.5em 1.5em 1.5em; 
+}
+#content h2, #content .tag-line { 
+	margin: 0 auto; 
+	font-weight: normal;
+	text-align: center;
+	width: 80%;
+}
+#content .tag-line { margin-bottom: 30px; }

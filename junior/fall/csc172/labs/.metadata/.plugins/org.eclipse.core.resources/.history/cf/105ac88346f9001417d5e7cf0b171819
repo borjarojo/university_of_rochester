@@ -1,0 +1,59 @@
+
+public class MainTest {
+
+	public static void main(String[]args){
+		//Create List
+		System.out.println("Creating MyList strList1...");
+		MyList<String> strList1 = new MyList<String>();
+		
+		//Insert Items
+		System.out.println("Inserting...");
+		strList1.insert("Borja");
+		strList1.insert("Mike");
+		strList1.insert("Peter");
+		strList1.insert("Chou");
+		strList1.insert("Vahag");
+		strList1.insert("Luke");
+		strList1.insert("Billy");
+		strList1.insert("Owen");
+		strList1.insert("Thomas");
+		strList1.insert("Will");
+		
+		//Print list
+		System.out.print("Printing strList1: "); strList1.printList();
+		
+		//Insert no duplicate
+		
+		//Create List
+		System.out.println();
+		System.out.println("Creating MyList strList1...");
+		MyList<String> strList2 = new MyList<String>();
+		
+		//Insert Items
+		System.out.println("Inserting...");
+		strList2.insert("Borja");
+		strList2.insert("Mike");
+		strList2.insert("Peter");
+		strList2.insert("Chou");
+		strList2.insert("Vahag");
+		strList2.insert("Luke");
+		strList2.insert("Billy");
+		strList2.insert("Owen");
+		strList2.insert("Thomas");
+		strList2.insert("Will");
+			//repeat
+		strList2.insert("Borja");
+		strList2.insert("Mike");
+		strList2.insert("Peter");
+		strList2.insert("Chou");
+		strList2.insert("Vahag");
+		strList2.insert("Luke");
+		strList2.insert("Billy");
+		strList2.insert("Owen");
+		strList2.insert("Thomas");
+		strList2.insert("Will");
+		
+		//Print list
+		System.out.print("Printing strList2: "); strList2.printList();
+	}
+}

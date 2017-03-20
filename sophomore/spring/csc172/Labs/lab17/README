@@ -1,0 +1,20 @@
+Borja Rojo
+brojo@u.rochetser.edu
+CSC 172
+Daniel Saltz
+
+Contents: Lab17.java, README, OUTPUT
+
+Lab17.java is my whole class for this lab
+
+This lab was an exercise in using the java supported HashMap class. This lab called
+for the reading of a file that held zipcodes, cities, and states in a comma delimitted
+format, and entering those cities into a hash map with thier zipcodes as their keys.
+Then, that hashmap was used to generate a new hashmap that held the amount of zipcodes
+a city has, with the amount as the data and the city as the key. Scanner was used for 
+reading the file.
+
+This lab was also instructed to make a loop to be able to lookup the cities with a 
+their zipcodes and number of zipcodes a city has with that city. The computer queries.
+then it decides if the input is valid through regex for the zipcode keys and containsKey()
+for the city keys. Scaner was used to user input.

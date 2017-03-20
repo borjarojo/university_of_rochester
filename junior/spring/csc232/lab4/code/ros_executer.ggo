@@ -1,0 +1,3 @@
+package "ros_executer"
+version "1.0"
+purpose "Executer .ggo file"

@@ -1,0 +1,16 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 6
+
+This lab had 4 parts to it. The first asked me to write a for-loop
+that incremented distance based on speed an time. I did not know how
+to code the second part specifically. I would create a class that extends
+JFrame and use the Graphics class to display the circles. The circles
+placement and size would have to do with how many were requested.
+The third part asked me to print diamonds
+depending on an input line count. The fourth question asked me to 
+print the lyrics to "The twelve days of Christmas" using switch
+statements.
+
+This was written in Eclipse.

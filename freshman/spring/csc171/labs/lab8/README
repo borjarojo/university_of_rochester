@@ -1,0 +1,25 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 8
+
+In the first program, I evaluated a set of positive numbers entered 
+by the user.I gave out the maximum, minimum, and average of the number 
+set. I used a while loop to check whether or not to continue the loop
+if a negative number was entered. I also used an if statement to determine
+whether an enter should be evaluated or not, depending on if the number
+was postive or negative.
+
+In the second program, I evaluated factorial operations using two 
+different data-types. Using a for-loop to run a factorial calculation,
+I evaluated factorial for the long data-type and the int data-type.
+
+In the third program, I drew a Cartesian plane that is 20x20 units
+tall and wide. I drew the plane using a for-loop for 20 iterations
+that created evenly spaced lines across the plane.
+
+In the fourth program, I altered the third program to make space for
+label on the x and y axis. I adjusted the ratio of each line being printed
+and adaquately printed the labels.
+
+This was written in Eclipse. Use Eclipse to run this program.

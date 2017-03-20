@@ -1,0 +1,23 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 13
+
+This lab was a test of file |/O. It tested creating, reading, and manipulation of files.
+
+The first method creates a file. This file creates a list of 10-20 Names with a random
+number between 1-10 next to the names with a space in between the name and number. The
+names used are random from a predefined array.
+
+The second method reads a file and prints the contents as line-delimited. This means
+that the Scanner reads the file elements by reading characters up to the end of a line.
+It then takes the element and prints it into the command line, breaks to the next line,
+and continues to read and break until there are no more elements to read.
+
+The third method re-writes files of this lab's format and takes the square of the numbers
+on the lines and re-writes over the old number. To accomplish this, the program reads
+the file to determine how many lines it has (because the line amount depends on the 
+random generation in method 1). With this, the program stores the names and numbers
+of the file. From there, the Formatter writes to the file of the same name and uses 
+the data read from the old version of the file to re-write the names and write the 
+old numbers' squares.

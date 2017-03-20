@@ -1,0 +1,27 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+h2 { margin: 0; }
+figure { 
+	border: 1px solid #333333;
+	width: 204px;
+	padding: 5px;
+}
+figcaption { 
+	display: block;
+	font-size: 10px;
+	font-style: italic;
+}
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;
+	min-width: 320px;
+	border-collapse: collapse;
+}
+.box {
+	display: table-cell;
+	border: 1px solid #333333;
+	padding: 15px;
+}

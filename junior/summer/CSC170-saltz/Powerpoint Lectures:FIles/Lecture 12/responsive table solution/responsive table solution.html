@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive table solution</title>
+	<style>
+	th, td { padding: 5px; }
+
+	/* The the media query to whatever width make sense for your content*/
+	@media (max-width: 480px) {
+		th { display: none; } 
+		td { display: block; } 
+		td:before {
+			content: attr(data-th) ": ";
+			font-weight: bold;
+			width: 6.5em; /* ...tweak to taste*/
+			display: inline-block;
+		}
+	}
+	</style>
+</head>
+<body>
+
+<table border="1">
+  <tr>
+    <th>Movie Title</th>
+    <th>Genre</th>
+    <th>Year</th>
+    <th>Gross</th>
+  </tr>
+  <tr>
+    <td data-th="Movie Title">Star Wars</td>
+    <td data-th="Genre">Adventure, Sci-fi</td>
+    <td data-th="Year">1977</td>
+    <td data-th="Gross">$460,935,665</td>
+  </tr>
+  <tr>
+    <td data-th="Movie Title">Howard The Duck</td>
+    <td data-th="Genre">"Comedy"</td>
+    <td data-th="Year">1986</td>
+    <td data-th="Gross">$16,295,774</td>
+  </tr>
+  <tr>
+    <td data-th="Movie Title">American Graffiti</td>
+    <td data-th="Genre">Comedy, Drama</td>
+    <td data-th="Year">1973</td>
+    <td data-th="Gross">$115,000,000</td>
+  </tr>
+</table>
+
+<p>To make this work, you have to add a <em>data-th</em> attribute to each table data (TD) cell in the HTML code.</p>
+
+<p>Based on <a href="http://codepen.io/geoffyuen/pen/FCBEg" target="_blank">this from Codepen</a>.</p>
+</body>
+</html>

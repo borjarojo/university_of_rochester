@@ -1,0 +1,11 @@
+
+public class Node {
+	private String name;
+	private float la, lo;
+
+	public Node(String s, float lati, float longi){
+		name = s;
+		la = lati;
+		lo = longi;
+	}
+}

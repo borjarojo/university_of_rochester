@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Internal Navigation Demo</title>
+<style>
+/* *****************************************************************
+ * Styles for demo purposes only
+ * *************************************************************** */
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;
+}
+.menu { 
+	position: fixed; /* magic sauce here */
+	width: 150px;
+	margin-right: 20px;
+}
+.content { margin-left: 170px; }
+
+.menu a:before { /* optional - nice embellishment */
+	/* Find Useful UTF-8 Characters at: http://mcdlr.com/8/; */
+	content: "\25B6 \A0"; /* down arrow */
+	font-size: 12px; 
+	color: #333333; 
+	position: relative;
+	bottom: 2px;
+} 
+.menu a:hover:before { color: #0081C2; }
+
+/* *****************************************************************
+ * Required for horizontal navigation
+ * *************************************************************** */
+.menu ul {  /* undo default UL styles */
+	margin: 0;
+	padding-left: 0; 
+	list-style-type: none; /* typical - no bullets */
+}
+.menu a { /* typical - style as needed */
+	display: block; /* typical - to make a larger clickable area */
+	padding: 5px 0;  /* typical - style as needed */
+	text-decoration: none;  /* typical - style as needed */
+	color: #333333; /* typical - style as needed */
+}
+.menu a:hover { color: #0081C2; } /* typical - style as needed */
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+	<h1>Internal Navigation Demo</h1>
+
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Top</a></li>
+			<li><a href="#helveticascenester">Helvetica scenester</a></li>
+		 	<li><a href="#kalechips">Kale chips</a></li>
+		 	<li><a href="#iphonegentrify">IPhone gentrify</a></li>
+		 	<li><a href="#churchkeysriracha">Church-key sriracha</a></li>
+		</ul>
+	</nav>
+
+	<section class="content">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h2>Another unordered list</h2>
+		<ul>
+			<li>Be careful</li>
+			<li>When styling the menu</li>
+			<li>Don't accidentally style other ULs</li>
+			<li>Like this one</li>
+		</ul>
+
+		<h2 id="helveticascenester">Helvetica scenester</h2>
+		<p>Helvetica scenester Bushwick ethnic, fashion axe iPhone mumblecore fanny pack flexitarian bicycle rights. Chia Banksy Wes Anderson, biodiesel sriracha actually you probably haven't heard of them chambray hashtag forage. Neutra Odd Future Williamsburg brunch stumptown, hella fanny pack church-key Helvetica. Narwhal mlkshk selfies +1 butcher Carles umami, chia actually gluten-free Pinterest. Aesthetic normcore Intelligentsia, Bushwick brunch asymmetrical whatever swag disrupt vegan 3 wolf moon fanny pack +1 Schlitz. Small batch pickled church-key, roof party Neutra Wes Anderson single-origin coffee sriracha Tumblr McSweeney's. You probably haven't heard of them salvia kogi fashion axe Vice, Etsy asymmetrical tofu High Life Banksy.</p>
+		<p>Deep v narwhal plaid, art party hella mixtape locavore brunch lo-fi next level keffiyeh single-origin coffee whatever readymade food truck. Retro selfies Carles jean shorts Tumblr. Yr retro Echo Park, chia selvage meggings Etsy disrupt XOXO authentic. Cosby sweater tousled authentic aesthetic single-origin coffee XOXO, sustainable meggings Banksy vegan. Tote bag shabby chic butcher whatever vinyl, lo-fi gentrify wayfarers mumblecore actually church-key Banksy. Shoreditch wayfarers mustache locavore biodiesel. Neutra Banksy four loko viral twee Godard, fanny pack put a bird on it swag Cosby sweater cray banh mi lomo crucifix direct trade.</p>
+
+		<h2 id="kalechips">Kale chips</h2>
+		<p>Kale chips banjo tote bag, Helvetica mustache bitters skateboard asymmetrical. Tumblr PBR American Apparel kale chips gastropub. Keytar Austin next level, beard brunch Helvetica chia squid. Art party farm-to-table Kickstarter gentrify synth, butcher salvia forage viral 3 wolf moon hoodie squid craft beer Truffaut. PBR McSweeney's deep v tote bag, hashtag ennui fashion axe raw denim kogi twee Thundercats DIY food truck 3 wolf moon. Mixtape mumblecore iPhone Williamsburg PBR&B. Bespoke hella Austin, salvia ethnic asymmetrical fashion axe messenger bag Vice.</p>
+		<p>Locavore occupy synth, you probably haven't heard of them kogi sustainable Odd Future crucifix +1 disrupt. Kogi farm-to-table art party wayfarers 90's. Twee readymade hella, church-key bitters narwhal drinking vinegar Wes Anderson farm-to-table mumblecore. Occupy High Life McSweeney's, swag Carles church-key leggings jean shorts trust fund Helvetica salvia tousled Etsy selvage wolf. Tofu stumptown aesthetic, literally cred forage fashion axe roof party PBR pork belly you probably haven't heard of them mixtape ennui Shoreditch selfies. Craft beer shabby chic plaid, slow-carb scenester McSweeney's selvage. Chia aesthetic occupy skateboard Etsy, vegan cornhole flexitarian yr flannel ethical iPhone drinking vinegar.</p>
+
+		<h2 id="iphonegentrify">IPhone gentrify</h2>
+		<p>IPhone gentrify plaid, deep v Neutra Carles four loko food truck. Ennui whatever Odd Future Marfa Etsy Carles, fingerstache food truck tattooed fashion axe disrupt. Kale chips pork belly wayfarers, plaid McSweeney's shabby chic viral meh distillery Shoreditch. Squid cornhole yr fixie, Austin twee Brooklyn paleo plaid deep v whatever scenester wolf. Actually Marfa hashtag scenester fap four loko flexitarian, yr gentrify Tumblr. Occupy chambray chillwave fixie. Pug hella chillwave squid Pinterest, before they sold out normcore lomo hashtag Tonx.</p>
+		<p>Skateboard keffiyeh Neutra chia, ugh literally chillwave polaroid tofu. 90's bespoke whatever, sustainable authentic kogi Etsy Echo Park polaroid four loko Cosby sweater vinyl Pitchfork vegan ennui. Fashion axe cardigan four loko 3 wolf moon narwhal. Freegan Banksy flannel, umami church-key put a bird on it crucifix. Hella selvage raw denim fashion axe. Sriracha kitsch put a bird on it, fanny pack Godard banjo PBR tousled hella cardigan fingerstache. Shabby chic typewriter photo booth meggings keytar.</p>
+
+		<h2 id="churchkeysriracha">Church-key sriracha</h2>
+		<p>Church-key sriracha Tumblr, tousled +1 kogi wolf lomo PBR fixie ethnic small batch. Austin ethnic Banksy, Godard tattooed food truck polaroid distillery meh small batch kitsch American Apparel bitters fanny pack mixtape. Pug fingerstache brunch meggings, Truffaut put a bird on it banh mi bitters raw denim master cleanse vinyl roof party lomo. PBR&B Echo Park Cosby sweater mlkshk. Flannel polaroid Intelligentsia fingerstache, flexitarian Neutra irony. Umami master cleanse four loko readymade. Distillery mixtape vinyl selvage.</p>
+		<p>Yr YOLO readymade raw denim scenester. Mixtape viral DIY, flexitarian four loko cornhole XOXO twee vinyl fingerstache. Mixtape bicycle rights authentic, flexitarian stumptown try-hard fashion axe. Mumblecore iPhone hella, Cosby sweater bitters chillwave vegan gentrify squid flexitarian authentic craft beer. Disrupt Truffaut retro messenger bag try-hard 3 wolf moon, cliche Austin. Fap banjo Schlitz lo-fi, normcore stumptown readymade Echo Park hella shabby chic craft beer Bushwick you probably haven't heard of them Portland. Vice tote bag sartorial, yr Pitchfork Truffaut retro.</p>
+
+	</section>
+
+</div><!--.container-->
+
+<!-- We'll cover JavaScript and jQuery later in the semester, but in the meantime, here's this... -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js"></script>
+<script>$('a[href*=#]').smoothScroll();</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+public class Codebreaker implements Mastermind {
+	
+	public Codebreaker(){
+		
+	}
+
+	public void response(int colorsRightPositionWrong,
+			int positionsAndColorRight) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void newGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String[] nextMove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

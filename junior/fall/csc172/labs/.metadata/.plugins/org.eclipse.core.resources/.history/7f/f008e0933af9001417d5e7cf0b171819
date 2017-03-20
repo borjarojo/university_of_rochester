@@ -1,0 +1,30 @@
+import java.util.Comparator;
+
+
+public class CharCompareMain {
+		//Func Obj Class and Method declarations
+		public static <T> T findMax(T[] array, Comparator<? super T> cmp){
+			T r = array[0];
+			for(int i = 0; i < array.length; i++){
+				if(cmp.compare(array[i], r) == 1){
+					r = array[i];
+				}
+			}
+			return r;
+		}
+		
+		private static class CharacterArrayMax implements Comparator<Character>{
+			public int compare(Character lhs, Character rhs){
+				return lhs.compareTo(rhs);
+			}
+		}
+
+		public static void main(String[]args){
+			//Declare
+			Character[] funcObjCharArray = { new Character('b'), new Character('O'), new Character('r'),
+			 								new Character('j'), new Character('A'), new Character('l')};
+			
+			//run
+			System.out.println(findMax(funcObjCharArray, new CharacterArrayMax() ));
+		}
+}

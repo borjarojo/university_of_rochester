@@ -1,0 +1,27 @@
+
+public class MainTest {
+
+	public static void main(String[]args){
+		//Create List
+		MyList<String> strList1 = new MyList<String>();
+		
+		//Insert Items
+		System.out.println("Inserting...");
+		strList1.insert("Borja");
+		strList1.insert("Mike");
+		strList1.insert("Peter");
+		strList1.insert("Chou");
+		strList1.insert("Vahag");
+		strList1.insert("Luke");
+		strList1.insert("Billy");
+		strList1.insert("Owen");
+		strList1.insert("Thomas");
+		strList1.insert("Will");
+		
+		//Print list
+		System.out.print("Printing strList1: "); strList1.printList();
+		
+		//Insert no duplicate
+		
+	}
+}

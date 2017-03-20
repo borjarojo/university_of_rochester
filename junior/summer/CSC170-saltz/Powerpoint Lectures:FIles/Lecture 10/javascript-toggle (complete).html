@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript toggle</title>
+</head>
+
+<body>
+
+	<h1>JavaScript demo</h1>
+
+	<!-- Identify the clickable element with an ID -->
+	<button id="myButton">Toggle it</button>
+
+	<!-- Identify the target element with an ID -->
+	<p id="peek-a-boo">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<script> 
+//	*******************************************************
+//	Toggle element to hide/show
+//	*******************************************************
+
+/*	************ SECTION 1: set-up variables ************ */
+// Step 1: assign the ID of the clickable element to a variable
+var toggler = "myButton";
+
+// Step 2: assign the ID of the element to be toggled to a variable
+var toggled = "peek-a-boo";
+
+// Step 3 and 4: Get a handle on the clickable element and create a variable to hold it
+var toggle_button = document.getElementById(toggler);
+
+// Step 5 and 6: Get a handle on the element to be toggled and create a variable to hold it
+var toggle_element = document.getElementById(toggled);
+
+/*	************ SECTION 2: set defaults **************** */
+// Step 7: Set the default state of the element to be toggled; either "block" (showing) or "none" (hidden)
+toggle_element.style.display = 'block';
+
+/*	************ SECTION 3: set-up functions ************ */
+// Step 8: write the function to do the toggling (won't execute 'til called)
+function toggleElement(id){ 
+
+	// Step 8a and 8b: Create a variable ("e") and get a handle on the element to toggle
+	var e = document.getElementById(id); 
+
+	// Step 8c: if display:inline, it must be showing...
+	if (e.style.display == 'block') {
+
+		// Step 8c-a: then hide it
+		e.style.display = 'none'
+
+	// Step 8d: else it must be hidden, so...
+	} else {
+
+		// Step 8c-a: then show it
+		e.style.display = 'block'
+	}
+}; 
+
+/*	************ SECTION 4: run the program ************* */
+// Step 9: Apply a click function to the clickable element
+toggle_button.addEventListener("click", function(){
+
+	// Step 9a: when the element is clicked, run the function
+	toggleElement(toggled)
+
+}, false);
+</script> 
+</body>
+</html>

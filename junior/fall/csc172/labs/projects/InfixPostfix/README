@@ -1,0 +1,77 @@
+Borja Rojo
+brojo@u.rochester.edu
+
+IMPORTANT!!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//My file's main class currently does not contain any test cases per sae, though		//
+//I have run many test cases to check the validity of my project. If the default		//
+//file to evaluate is not enough to determine that my project works (which, quite		//
+//frankly, it should as it contains the kind of evaluation that is being looked for)	//
+//then please feel free to run your own test cases. Do this by adding new expressions	//
+//in the infix_expr_short.txt file.														//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+File included:
+
+//Main Project files
+Main.java			//My Main class to run the evaluation of the infix expressions
+InToPost.java		//The class that holds all my methods for reading an infix file 
+					//And evaluating them in postfix
+
+//Support classes				
+DoubleNode.java 	//Double node class for my Queue
+Queue.java			//Queue class that I created in an earlier lab
+QueueInterface.java	//Queue's Interface
+Node.Java			//Node class for my Stack class
+Stack.java			//Stack class that i created in an earlier lab
+StackInterface.java	//Stack's Interface
+
+
+
+Procedure:
+
+	My evaluation was done in 4 steps
+	1.Read the file and save each line, character by character,
+		into a Queue array
+	2.Tokenize the strings into a Queue array. Each spot in my
+		Queue held a token to be evaluated
+	3.Convert the infix Queue array into a new postfix Queue array
+	4.Evaluate the postfix Queue array and save them into floats
+	
+1. The first step was done in order to be able to manipulate the expression
+to my liking. I used the substring() method to be able to select exact characters
+to save to a new Queue. This gave me a Queue with each character sepperate,
+allowing for easy manipulation
+
+2. Then, I used that Queue to tokenize into a new Queue. The following was done 
+to determine tokens:
+
+Many factors had to be considered due to the formating of the expressions.
+Spaces needed to be ignored in all cases, so whenever a space was read, the
+tokenizer moved on. The next hurdle was negative numbers. The file was formatted
+in order to indicate negative numbers with "-" RIGHT before their respective
+negative number. Therefore, whenever I reached a negative symbol, I would save it
+to a string and continue evaluating the expression. If a space was next, or
+that was not a number, then I would know that the symbol was a subtraction 
+indicator and not a negative indicator. The third consideration was having to
+deal with floats. I used the same method as I did with the negative symbol:
+whenever a number is reached, save to a string and continue evaluating until
+a different indicator came up. This way, I was able to read both negative and
+floats, and of course negative floats. The rest of the tokenization was naturally
+to just save the character to the new Queue. The result was a Queue that held
+no spaces and all of the numbers together as String objects in the Queue.
+
+3. Then, I used the Shunting Yard system to manipulate my expressions into
+post fix. I created a priority() method in order to evaluate which kind of
+operands go where and how to manipulate my stack. If you want to see my priority,
+check my code. The system is rather straight forward.
+
+4. Lastly, to evaluate the expressions, I used the required system for postfix.
+with my post fix Queue, I was able to correspondingly cast the floats stored
+as Strings and perform the corresponding operations on them. The only hurdle I
+had here was being able to clearly execute the boolean expressions. I got over
+this by using 1 and 0 as my true and false values.
+
+This was the approach I used. I hope this is detailed enough. After taking in the
+expressions and manipulating them to postfix, the rest was pretty straight forward.
+I used many systems of if/else statements in order to evaluated tokens.

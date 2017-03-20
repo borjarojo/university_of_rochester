@@ -1,0 +1,56 @@
+
+
+public class Codebreaker implements Mastermind {
+	
+	String[] colors;
+	int pos;
+	int guesses;
+	
+	int[][] code;
+	
+	public Codebreaker(String[] tokencolors, int positions){
+		colors = tokencolors;
+		pos = positions;
+		guesses = (int) Math.pow(colors.length, pos);
+		//Create an array that can hold all of the possible solutions
+		code = new int[guesses][pos];
+		
+		//Fill array
+		for(int i = 0; i < guesses; i++){
+			int x = i;
+			int quad;
+			int quo;
+			for(int j = 0; j < pos; j++){
+				int quad = x % colors.length;
+				
+				code[i][j] = 
+			}
+		}
+		
+	}
+
+	public void response(int colorsRightPositionWrong,
+			int positionsAndColorRight) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void newGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String[] nextMove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public void printGuesses(){
+		for(int i = 0; i < guesses; i++){
+			for(int j = 0; j < pos; j++){
+				System.out.print(code[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+}

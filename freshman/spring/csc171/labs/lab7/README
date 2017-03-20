@@ -1,0 +1,14 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 7
+
+The objective of Lab 7 was to draw a picture using a JFrame and JPanel.
+I used the setColor method in the Graphics class to set colors of 
+different shapes I drew. I used the drawOval method to draw circles
+for the body, buttons, and eyes of the snowman. I used drawLine to draw
+the arms of the arms. I used fillPolygon to draw a triangle for the 
+nose. I used fillArc to draw the mouth of the snowman. I used drawString
+to make the snowman talk. I used fillRect to make the background blue.
+
+This was written in Eclipse. Use Eclipse to run this program.

@@ -1,0 +1,50 @@
+Borja Rojo
+brojo@u.rochester.edu
+Lab 11
+Daniel Saltz
+
+Welcome to DrRacket, version 6.1.1 [3m].
+Language: Advanced Student; memory limit: 128 MB.
+486
+4
+3
+-3
+15
+5
+0.2
+10
+105
+0.46
+91
+57
+105
+false
+true
+false
+true
+"Hello, world""\n"13
+39
+221
+221
+380.13239
+69.11498
+100
+169
+41
+81
+25
+#i3.141592653589793
+#i254.46900494077323
+#i50.26548245743669
+"long""short"7
+3
+21
+7
+6
+5040
+"This is my GCD Code and some Examples"
+"GCD 18 12"6
+"GCD 52 91"13
+"GCD 21 35"7
+"GCD 135 54"27
+> 

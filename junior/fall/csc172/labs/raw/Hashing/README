@@ -1,0 +1,18 @@
+Borja Rojo
+brojo@u.rochester.edu
+CSC172
+Lab 17 Hashing
+
+Partner: Daniel Saltz
+
+This lab was a an exercise in creating your own Hash table. First, a hash value 
+function was created using good strategies. Then insertion with linear probing 
+was used as the method for adding elements to the hash table. Insertion can
+only insert keys that are already not present. If the table has a load factor
+of more than 50%, then the table is expanded using rehashing. Rehashing is a
+proceedure where a new, larger table is built and then all the elements in the
+old hash table are inserted, or "rehashed", into the new table, larger table,
+This is used for run time efficiency.
+
+Then, the table was tested on a large number of values using the Lorem Ipsum
+pregenerated words. Ten paragraphs of words were then hashed into a hash table.

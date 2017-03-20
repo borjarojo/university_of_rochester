@@ -1,0 +1,46 @@
+First Program:
+
+This program is shows the results of four arithmetic operations of two numbers
+
+Please enter the first number: 45
+45.000000
+Please enter the second number: 8.7
+45.000000
+
+45.000000+8.700000=53.700000
+45.000000-8.700000=36.300000
+45.000000*8.700000=391.500000
+45.000000/8.700000=5.172414
+
+Second Program:
+
+This program converts Fahrenheit to Celsius
+What is the temperature today? 60
+60.00
+
+The temperature in Celsius is 15.56 today.
+
+Third Program
+
+The results are run in the JOptionPane format, so there is nothing to report on the Terminal
+
+Fourth Program
+
+The results are run in the JOptionPane format, so there is nothing to report on the Terminal
+
+Fifth Program
+
+This program help estimate the population size of the future.
+
+Please enter-
+
+	Current Population Size: 1500
+	1500
+	Current Year: 2014
+	2014
+	Annual Growth Rate (in percent): 15
+	15
+	Estimated Year: 2018
+	2018
+
+The estimated population size in 2018 is 2624.

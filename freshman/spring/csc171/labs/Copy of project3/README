@@ -1,0 +1,34 @@
+README for PROJECT 3 - Retirement Calculator
+by Borja Rojo
+5/4/14
+Comp Sci 171
+TA: David Sekora
+
+
+Lab Partner: Haotion Li
+
+	This assignment was to make a retirement calculator that has many fields where you can enter information.  The information
+is scanned and used to make a graph that is in the Frame and automatically updates when the fields change.  The graph has x-axis numbers
+that correlate to the age you will be at.  And the graph rescales at certain limits, unfortunately, it does not scale to the top
+all the time.
+
+	I used a series of JTextFields that were listened using a document listener, and the information was relayed using some getters
+and setters to my paint component.  Then in my paint component many methods were called to use the correct math to find the yearly worth.
+I then created an object "bar" that took in 4 ints, and a color.  Which would correlate to the x-coordinate, y-coordinate, width, height,
+and the color of the bar.  If the bar is positive, it is green, if it is negative, it is red.
+
+
+I did not use any major online resources, besides basic syntax of Document Listeners.  I know many other students used code to make a graph
+from one of the TAs, I created my own.
+
+Includes:
+bars.java
+boxArea.java
+generalMeth.java
+graphOBars.java
+mainPage.java
+textBoxes.java
+Obit.pdf
+README
+
+To run: Double click the runnable JAR file.

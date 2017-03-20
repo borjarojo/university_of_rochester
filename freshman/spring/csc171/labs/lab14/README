@@ -1,0 +1,22 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 14
+
+This lab tested the RegEx concepts to check strings. This proves to be 
+useful for gathering information from people in a survey type situation.
+This lab had me take the first name, last name, address, city, state,
+zip-code, and email address of the user. These pieces of information had
+to be entered in a certain format which then needed to be evaluated using
+matches() and RegEx in order to varify the format. The trickiest piece of
+information was evaluating the email addresses for dots at the begining
+and end of the username. I solved this problem by using methods to find
+the location of the @ symbol in the string and checking to make sure 
+the character before the @ symbol wasn't a dot. It was much simpler to 
+check that the first character was not an @ symbol.
+
+This code has not packages, so it should work in the command line.
+
+I DO NOT KNOW HOW TO MAKE MY JAR FILES WORK. I have not found ANYTHING that
+can help explain what my problem is. My code works in Eclipse and compiles 
+on Terminal, but it does not make a working Jar file.

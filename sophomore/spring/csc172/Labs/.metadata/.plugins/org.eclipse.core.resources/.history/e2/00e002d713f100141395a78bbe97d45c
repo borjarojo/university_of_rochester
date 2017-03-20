@@ -1,0 +1,8 @@
+
+public class Edge {
+	public Node v, w;
+	public Edge(int i, int j){
+		v = i;
+		w = j;
+	}
+}

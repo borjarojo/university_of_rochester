@@ -1,0 +1,19 @@
+Borja Rojo
+
+Compile and run in the command line. Alternately, run the project in eclipse.
+
+OUTPUT:
+
+Ordering With Identical Items
+1a) error: 20
+1b) street: 180
+1b) allele: 60
+1d) mississippi: 34650
+
+Distributing Indistinguishable Objects into Bins
+2a) six apples to four children: 84
+2a) four apples to six children: 126
+
+Distributing Distinguishable Objects into Bins
+3a) six apples and three pears to five children: 60060
+3b) two apples, five pears, and six bananas to 3 children: 3783780

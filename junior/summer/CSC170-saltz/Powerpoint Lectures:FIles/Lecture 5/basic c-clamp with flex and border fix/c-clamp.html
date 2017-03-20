@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>C-Clamp Demo</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<style>
+	/*	*************************************
+		Styles for demo purposes only.
+		- delete this entire <style> block 
+		  and use your own in a separate 
+		  attached stylesheet
+		************************************* */
+		body { 
+			/* cascade to ALL the elements... */
+			font-family: Arial; 
+			font-size: 14px;
+			font-weight: bold;
+			color: white; 
+		}
+		header, aside, footer { background-color: rgb(91,155,213); }
+		header, footer { height: 75px; }
+		article, aside { height: 200px; }
+		article { background-color: rgb(146,208,80); }
+
+	/*	*************************************
+		To get all the content in these elements
+		to be centered and middle-aligned...
+		************************************* */
+		header, article, aside, footer { 
+			display: flex; /* super powers activate! */
+			align-items: center; /* vertical middle */ 
+			justify-content: center; /* left/right centering */
+		}
+
+	/*	*************************************
+		Borders
+		Note: FLEX does not have "border-collapse" (Thanks for nothin' W3C!)
+		About CSS selectors: http://www.w3schools.com/cssref/css_selectors.asp
+		************************************* */
+		/* all elements in the body get borders on three sides... */
+		body > * { 
+			border-top: 1px solid #333333; 
+			border-right: 1px solid #333333;
+			border-left: 1px solid #333333; 
+		}
+		/* ...and the last element (child) in the body gets a border 
+			on the bottom too */
+		body > *:last-child { border-bottom: 1px solid #333333; }
+
+		/* all elements in the section get borders on the right only... */
+		section > * { border-right: 1px solid #333333; }
+
+		/* ...and the last element (child) in the section does NOT get
+			 a border on the right... */
+		section > *:last-child { border-right: none; }
+
+	</style>
+</head>
+
+<body class="container">
+
+	<header>
+		&lt; Header &gt;
+	</header>
+
+	<section class="wrapper">
+
+		<article class="wrapped-main">
+			&lt; Article &gt;
+		</article><!-- .main-content -->
+
+		<aside class="wrapped-sidebar">
+			&lt; Aside &gt;
+		</aside><!-- .sidebar -->
+
+	</section><!-- .content-area -->
+
+	<footer>
+		&lt; Footer &gt;
+	</footer>
+
+</body>
+</html>

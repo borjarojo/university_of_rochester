@@ -1,0 +1,13 @@
+Borja Rojo
+brojo@u.rocehster.edu
+Daniel Saltz
+
+Contents: HeapInterface.java Heap.java HeapsMain.java
+
+This lab was an exersize in implementing the Heap data structure.
+The main challenges were implementing the idea of bubbleUp and bubbleDown.
+These two methods are pinnacle as every data structure modeled after a heap
+has these two properties. The insert method has an expand method used to
+expand a heap when needed, and then used bubbleUp to correct itself. 
+The deleteMin returned the minimum value in my heap, which is the starting
+item, and used the bubbleDown method to reorganize the heap.

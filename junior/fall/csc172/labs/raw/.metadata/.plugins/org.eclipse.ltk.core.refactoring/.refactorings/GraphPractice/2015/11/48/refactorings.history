@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;ShortestPath/src&apos;&#x0A;- Original project: &apos;GraphPractice&apos;&#x0A;- Destination element: &apos;ShortestPath/src&apos;&#x0A;- Original elements:&#x0A;     Graph.java&#x0A;     AdjList.java&#x0A;     Edge.java" description="Copy compilation units" destination="=ShortestPath/src" element1="/src&lt;{Graph.java" element2="/src&lt;{AdjList.java" element3="/src&lt;{Edge.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1448205759500" units="3" version="1.0"/>
+</session>

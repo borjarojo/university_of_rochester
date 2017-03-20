@@ -1,0 +1,23 @@
+
+public class Edge {
+	public String name;
+	public Node v, w;
+
+	public Edge(String n, Node i, Node j){
+		name = n;
+		v = i;
+		w = j;
+	}
+	
+	public String name(){
+		return name;
+	}
+	
+	public Node start(){
+		return v;
+	}
+	
+	public Node end(){
+		return w;
+	}
+}

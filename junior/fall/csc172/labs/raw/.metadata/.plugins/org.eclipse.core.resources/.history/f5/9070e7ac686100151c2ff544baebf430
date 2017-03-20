@@ -1,0 +1,7 @@
+
+public interface Mastermind {
+	public void response(int colorsRightPositionWrong, 
+			int positionsAndColorRight){
+		
+	}
+}

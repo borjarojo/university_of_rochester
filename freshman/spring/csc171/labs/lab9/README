@@ -1,0 +1,17 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 9
+
+This lab has an emphasis on methods. It asked me to write many types of methods.
+I wrote static methods because none of the methods altered any global values. 
+The method used to print my name and address was a void method because it did
+not return any values. The other, more mathimatical, methods returned many
+different types of values, such as ints, doubles, and longs. I also used methods
+within methods, such as the cubed method using the square method and the larger 
+max methods using the two-int max method ealier. I also overloaded three of my
+methods, max, square, and cube, so that I could have different data-types or
+different amounts of data bring entered.
+
+I wrote this in Eclipse. You can run it there in if you add [package lab9;]
+to the top. Other then that, it's java.

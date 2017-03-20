@@ -1,0 +1,11 @@
+
+public class MastermindMain {
+	public static void main(String[]args){
+		String[] colors = {"red", "blue", "green", "orange"};
+		int positions = 4;
+		
+		Codebreaker cpu = new Codebreaker(colors, positions);
+		
+		cpu.printCurrentGuess();;
+	}
+}

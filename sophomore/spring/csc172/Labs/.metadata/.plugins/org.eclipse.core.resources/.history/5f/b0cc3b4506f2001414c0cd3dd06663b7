@@ -1,0 +1,15 @@
+import javax.swing.JFrame;
+
+/*
+ * Author: Borja Rojo
+ * Project 4
+ * CSC 172
+ */
+
+public class MapFrame extends JFrame{
+	
+	public MapFrame(JPanel panel){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	}
+}

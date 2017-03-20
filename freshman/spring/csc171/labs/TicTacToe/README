@@ -1,0 +1,29 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Project 2
+
+NOTE:
+Playing against the computer will only allow you to play as X because Tic Tac Toe is a solved game
+
+This assignment was very difficult. Most of the issues that went into programming this
+program had to do with my lack of knowledge in the Java language. It was hard to put 
+together the JPanels because I did not understand how the different layouts and possible
+components could be used. After I understood that, it was not too difficult to make the
+layout. Another challenge was using the JButtons. I had to understand how to read an
+input from the JButtons. Once I understood how ActionListener worked, then I was able 
+to use it well. Another Challenge I had was making the game save the scores. I was not
+sure what to do for the exceptions. I was told that I just needed to include the default
+try-catch block and to not worry about the rest, so I did that, and it works fine now.
+Programming the AI was very difficult. I was told to look up algorithims, but because
+this is my first year programming, I had no idea how to program what I was reading, so]
+I did a large if-else decision tree.
+
+This project wasn't too difficult when it came to making the game work. The project was 
+incredibly difficult when it came down to coding what was in my head. The problem 
+solving was tough, but the coding was.
+
+The way to run the program is to run the JAR file, or to import the ZIP file into 
+Eclipse and run it there. there is no packaging on this file, so it should run in the
+compiler.
+

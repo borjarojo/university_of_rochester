@@ -1,0 +1,12 @@
+
+public class Edge {
+	public String name;
+	public Node v, w;
+	public int index;
+
+	public Edge(Node i, Node j, int k){
+		v = i;
+		w = j;
+		index = k;
+	}
+}

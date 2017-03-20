@@ -1,0 +1,4 @@
+package "ros_subscriber"
+version "1.0"
+purpose "Subscriber .ggo file"
+option "fileOutputName" - "f" string default="sub_output" optional

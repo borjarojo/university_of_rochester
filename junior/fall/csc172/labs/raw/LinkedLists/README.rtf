@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Borja Rojo\
+brojo@u.rochester.edu\
+\
+Partner: Daniel Saltz\
+\
+Contents in src: LinkedList.java, MainTest.java, MyList.java, Node.java\
+\
+LinkedList.java holds my linked list interface. MainTest.java holds my main test method. MyList.java implements LinkedList and holds the implementations asked for in the lab. Node.java holds my node information.\
+\
+This lab was an exercise in creating a linked list.\
+\
+My Node.java class hold a generic T data and a reference to the next node Node<T> next.\
+\
+My LinkedList.java interface holds an insert method, a delete method, a lookup method, an isEmpty method, and a printList method.\
+\
+My MyList.java implements LinkedList.java. It holds Node<T> start that is set to null at construction time. isEmpty() returns true if start.next == null, meaning an empty list because my constructor sets start to null. insert() has a constant runtime O(1). it links the new node to the first and the start node to the first.\
+\
+The printList() method has a run time of O(n).\
+\
+lookUp() was implemented to return true if the passed item was found and false otherwise. I then modified my insert method with an if statement to bypass the insertion procedure if an item was found in the list. My insert() prints whether or not an item was found or not within the method.\
+\
+delete() deletes a node by riding the previous node as opposed the next node. lookUp() checks to see if deletion is needed. If it is not, then it bypasses the whole deletion algorithm. If it is, when the next node is found to match the passed item, it sets it\'92s next node to the next\'92s node next node. This effectively bypasses the node found that needs to be deleted. The delete() prints if an item was found and in need of deletion within the method.\
+\
+My code behaves as asked. Check this within my code if my tests are not convincing.}

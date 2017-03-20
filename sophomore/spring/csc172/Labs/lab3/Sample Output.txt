@@ -1,0 +1,1 @@
+Borja RojoLab 3Empty : true1 2 3 4 5 5 4 3 2 1 Empty : falseIs 9 in the list? : falseIs 4 in the list? : trueDelete 41 2 3 5 5 3 2 1

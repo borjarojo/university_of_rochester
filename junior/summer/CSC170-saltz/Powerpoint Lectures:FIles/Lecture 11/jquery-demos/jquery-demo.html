@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript vs. jQuery Demo</title>
+</head>
+<body>
+
+<h1 id="myHeading">Something here in the H1</h1>
+<p class="anySelector">Something here in the paragraph</p>
+
+<button id="myButton">Click me!</button>
+
+<!-- The Plain JavaScript way... -->
+<script>
+var myVariable = document.getElementById("myHeading");
+myVariable.innerHTML = "JavaScript says Hello World!";
+</script>
+
+<!-- The jQuery way -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(".anySelector").html("jQuery says Hello World!");
+
+$("#myButton").click(function(){
+    $(".anySelector, #myHeading")
+    	.css("border","3px solid red")
+    	.css("padding","10px");
+    $("#myButton").hide();
+});
+</script>
+</body>
+</html>

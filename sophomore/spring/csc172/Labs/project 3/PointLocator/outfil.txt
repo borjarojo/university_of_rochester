@@ -1,0 +1,2 @@
+Points (0.25,0.2),(0.6,0.5) are separated by line (1.0,0.41),(0.0,0.52)
+Points (0.95,0.1),(0.11,0.5) are in the same region

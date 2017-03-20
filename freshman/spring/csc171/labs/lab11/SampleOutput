@@ -1,0 +1,29 @@
+1-5
+
+Please enter a positive integer...
+7
+1 7 7 3 2 6 1 
+-1 7 7 3 2 6 1 
+1 7 7 3 2 6 1 
+-1 7 7 3 2 6 1 
+
+
+6-10
+
+Print of first array
+
+zach,nina,connor
+kevin,arin,morgan
+
+Print second array
+
+pizza,burger
+sushi,taco
+salad,cake
+
+Please enter an integer for the row amount of an array...3
+
+Please enter an integer for the col amount of that array...4
+3,1,8,5
+8,3,7,6
+1,4,10,10

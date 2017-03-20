@@ -1,0 +1,30 @@
+
+public class Codebreaker implements Mastermind {
+	
+	String[] colors;
+	int pos;
+	
+	int[][] code;
+	
+	public Codebreaker(String[] tokencolors, int positions){
+		colors = tokencolors;
+		pos = positions;
+		code = new int[colors.length**pos][colors.length];
+	}
+
+	public void response(int colorsRightPositionWrong,
+			int positionsAndColorRight) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void newGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String[] nextMove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Navigation Demo with Dropdown</title>
+<style>
+/* *****************************************************************
+ * Styles for demo purposes only
+ * *************************************************************** */
+.menu { 
+	text-align: center; /* typical - style as needed */
+}
+
+/* typical - style as needed... */
+.menu li { 
+	border-top: 1px solid #75ACE4; 
+	border-left: 1px solid #75ACE4; 
+	border-bottom: 1px solid #75ACE4; 
+}
+.menu li:last-child { border-right: 1px solid #75ACE4; } 
+
+/* *****************************************************************
+ * Required for horizontal navigation
+ * *************************************************************** */
+.menu ul {  /* undo default UL styles */
+	margin: 0;
+	padding-left: 0; 
+	list-style-type: none; /* typical - no bullets */
+}
+.menu ul { display: flex; } /* set menu items side-by-side */
+
+.menu a { 
+	display: block; /* typical - to make a larger clickable area */
+	padding: 5px 10px;  /* typical - style as needed */
+	text-decoration: none;  /* typical - style as needed */
+	color: #333333; /* typical - style as needed */
+}
+.menu a:hover {  /* typical - style as needed */
+	color: #0081C2; 
+	background-color: #dddddd;
+}
+
+/* *****************************************************************
+ * Required for drop-down menus
+ * *************************************************************** */
+/* good usability technique: place an arrow indicator on the menu;
+	note: old IE no likey ">" (the child selector) */
+li.has-submenu > a:after { 
+	content: "\A0 \25BC"; /* down arrow */
+	/* Find Useful UTF-8 Characters at: http://mcdlr.com/8/; */
+	font-size: 9px; 
+	color: #333333; 
+} 
+
+/*	Demo styles for submenus */
+.menu li li { 
+	text-align: left; /* if the main menu changed the default alignment, change it back */
+	border: none; /* if the main menu uses borders, get rid of them */
+}
+.menu li li:last-child { 
+	border: none; /* if the main menu uses borders, get rid of them */
+}
+.menu li ul { 
+	width: 200%; /* typical - style as needed */
+    background-color: #ffffff; /* required - style as needed */
+    border: 1px solid #dddddd; /* typical - style as needed */
+    padding: 5px 0; /* typical - style as needed */
+}
+.menu li ul a { 
+    color: #333333;  /* typical - style as needed */
+    padding: 3px 20px;  /* typical - style as needed */
+}
+.menu li ul a:hover { 
+    background-color: #0081C2;  /* typical - style as needed */
+    color: #FFFFFF;  /* typical - style as needed */
+}
+
+/*	*****************************************************************
+ *	Required for sub-menus
+ *	*************************************************************** */
+/*	Unordered lists that appear inside a menu must be hidden by	
+	default, and pulled out of the flow with positioning */
+.menu li { position: relative; } /* Create a 'world' for the submenus */
+
+.menu li ul { 
+	display: none;
+    position: absolute; /* required - pull the submenu out of the flow */
+    top: 100%; /* required - position the sub-menu */
+    left: 0; /* required - position the sub-menu */
+	z-index: 1000; /* important - make sure always on top */
+}
+.menu li:hover ul { display: block; } /* magic! */
+
+/* counter-act styles from the 'normal' menu items */
+.menu ul li ul li {	display: block; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Navigation Demo with Dropdown</h1>
+
+<nav class="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li class="has-submenu"><a href="#">Products</a>
+		    <ul>
+			   <li><a href="#">sub menu 1</a></li>
+			   <li><a href="#">sub 2</a></li>
+			   <li><a href="#">sub 3</a></li>
+			   <li><a href="#">sub 4</a></li>
+		    </ul>
+		</li>
+		<li class="has-submenu"><a href="#">Services</a>
+		    <ul>
+			   <li><a href="#">more sub 1</a></li>
+			   <li><a href="#">sub 2</a></li>
+		    </ul>
+		</li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+</nav>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h2>Another unordered list</h2>
+<ul>
+	<li>Be careful</li>
+	<li>When styling the menu</li>
+	<li>Don't accidentally style other ULs</li>
+	<li>Like this one</li>
+</ul>
+
+</body>
+</html>

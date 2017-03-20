@@ -1,0 +1,64 @@
+
+
+//This List runs through with the start node empty.
+public class MyList<T> implements LinkedList<T>{
+	Node<T> start;
+	
+	//empty constructor
+	public MyList(){
+		start = new Node<T>();
+	}
+	
+	//Insert data. O(n). Runs through the list and inserts at the end.
+	public void insert(T x) {
+		//if lookup is false
+		if(!lookup(x)){
+			Node<T> at = start;
+			while(at.next != null){
+				at = at.next;
+			}
+			at.next = new Node<T>(x);
+		}
+	}
+
+	public void delete(T x) {
+		if(lookup(x)){
+			Node<T> at = start;
+			while(at.next != null){
+				at = at.next;
+				if(at.data == x){
+					
+				}
+			}
+		}
+		
+	}
+
+	public boolean lookup(T x) {
+		Node<T> at = start;
+		while(at.next != null){
+			at = at.next;
+			if(at.data == x) return true;
+		}
+		return false;
+	}
+
+	public boolean isEmpty() {
+		if(start == null) return true;
+		return false;
+	}
+	
+	//Begins at the start of the list, moves into a data point,
+	//prints, moves to the next, repeats until last data point
+	//is reached. then print last data point
+	public void printList() {
+		Node<T> at = start;
+		while(at.next != null){
+			at = at.next;
+			System.out.print(at.data + " ");
+		}
+		System.out.println();	
+	}
+	
+	
+}

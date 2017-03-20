@@ -1,0 +1,11 @@
+import javax.swing.JPanel;
+
+/*
+ * Author: Borja Rojo
+ * Project 4
+ * CSC 172
+ */
+
+public class MapPanel extends JPanel{
+
+}

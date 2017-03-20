@@ -1,0 +1,14 @@
+
+public class MainTest {
+	public static void main(String[]args){
+		
+		Node n1 = new Node("Corner1", 0, 0, 0);
+		Node n2 = new Node("Corner2", 0, 5, 1);
+		Node n3 = new Node("Corner3", 5, 0, 2);
+		Node n4 = new Node("Corner4", 5, 5, 3);
+		
+		Edge e1 = new Edge();
+		
+		
+	}
+}

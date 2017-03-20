@@ -1,0 +1,14 @@
+This project consisted of two class types being created and tested, Rational and Complex numbers.
+Each class called upon 2 variants of the four arithmetic operator methods, on Static and one 
+Dynamic. My approach was simple: use the steps I learned in basic algebra to perform these
+operations systematically. This way, a computer can replicate each step. Most specifics are
+details within the program with my comments. The static and dynamic methods do the job asked by
+the project, but both use the same approach in systematic calculation.
+
+Each class also had two different methods that are useful when dealing with Rational or Complex numbers.
+The Rational class has an equals and compareTo method. They are BOTH dynamic methods. The difference is
+that the compareTo method returns a 1 or a -1 depending if the two compare Rationals are equal or not,
+respectively. The equals method does the same but returns true of false for equals or not equals, respectively.
+The Complex class lets you calculate the radius and angle of the complex number as if it were plotted on a 
+2-D plain. These two methods are static. The radius method uses the Pythagorian theorum and returns a double
+representative of length. The angle method uses the tan() method and returns a double.

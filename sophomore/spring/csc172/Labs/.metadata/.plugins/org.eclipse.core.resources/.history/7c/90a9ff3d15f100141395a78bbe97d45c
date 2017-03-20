@@ -1,0 +1,10 @@
+
+public class Node {
+	public int v;
+	public String name;
+	
+	public Node(int i, String s){
+		v = i;
+		name = s;
+	}
+}

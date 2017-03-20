@@ -1,0 +1,26 @@
+Name: Borja Rojo
+Class: 2017
+TA Name: David Sekora
+Assignment Number: Lab 11
+
+The results of the first half show the original array printed (first half of 5) 
+and then the altered arrays (second half of 5). The altered arrays show that 
+when the original array was altered, so was the aliased array while the copied 
+array was not affected. This is due to the was arrays are stored and called upon.
+When an element of an array is addressed or is used, the actually memory of the
+array element is being used. This means that any function on that array or array
+element will affect the ACTUAL original array. This is reflected in the results 
+because the aliased array is a pointer to the original array, so when the original
+is altered, so is the aliased array. The second array is NOT affected because the
+array it was assigned to was an actual copy, where elements of the original array
+were copied into the memory spaces, as opposed to becoming pointers to previously
+defined memory locations.
+
+The second part of the assignment was a 2D array manipulation program. It has methods
+to print 2D arrays in CSV format for both String 2D arrays and int 2D arrays. It also
+has a method to create a random 2D array with elements between 0 and the product of 
+the row and column count. For the methods, I used nested for-loops to systematically 
+go through each row and column element, depending on the row amount and column amount 
+of each respective row. that means that if a row element does not have the same amount
+of column elements as other rows, the method will compensate for that.
+

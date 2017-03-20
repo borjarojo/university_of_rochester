@@ -1,0 +1,60 @@
+; Borja Rojo
+; 10/31/15
+; lab 14
+
+(define (make-rat n d ) (cons n d))
+(define (numer rat) (car rat))
+(define (denom rat) (cdr rat))
+(define (print-rat rat)
+ (display (numer rat))
+ (display "/")
+ (display (denom rat))
+ (newline))
+
+; Methods to be writen
+(define (add-rat rat1 rat2)
+    (make-rat (+ (* (numer rat1) (denom rat2))
+                 (* (numer rat2) (denom rat1)))
+              (* (denom rat1) (denom rat2))))
+(define (sub-rat rat1 rat2)
+    (make-rat (- (* (numer rat1) (denom rat2))
+                 (* (numer rat2) (denom rat1)))
+              (* (denom rat1) (denom rat2))))
+(define (mul-rat rat1 rat2)
+    (make-rat (* (numer rat1) (numer rat2))
+              (* (denom rat1) (denom rat2))))
+(define (div-rat rat1 rat2)
+   (make-rat (* (numer rat1) (denom rat2))
+              (* (denom rat1) (numer rat2))))
+(define (equals-rat rat1 rat2)
+    (if (= (* (numer rat1) (denom rat2)) (* (denom rat1) (numer rat2)))
+    (display "true")
+    (display "false")))
+
+; Numbers
+(define rat1 (make-rat 1 3))
+(define rat2 (make-rat 2 5))
+(define rat3 (make-rat 3 7))
+(define rat4 (make-rat 4 11))
+(define rat5 (make-rat 5 13))
+(define rat6 (make-rat 6 17))
+(define rat7 (make-rat 7 19))
+(define rat8 (make-rat 8 23))
+(define rat9 (make-rat 9 31))
+(define rat10 (make-rat 10 37))
+
+; Test
+(display "Picking 2 rational numbers to test with: ")
+(newline)
+(display "rat1 = ")(print-rat rat1)
+(display "rat2 = ")(print-rat rat2)
+(newline)
+(display "rat1 + rat2 = ")
+(print-rat (add-rat rat1 rat2))
+(display "rat1 - rat2 = ")
+(print-rat (sub-rat rat1 rat2))
+(display "rat1 * rat2 = ")
+(print-rat (mul-rat rat1 rat2))
+(display "rat1 / rat2 = ")
+(print-rat (div-rat rat1 rat2))
+

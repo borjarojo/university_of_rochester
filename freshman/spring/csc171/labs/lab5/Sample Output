@@ -1,0 +1,49 @@
+This program evaluates information you give it.
+
+What is your name? 
+Borja Rojo
+
+How old are you? 
+18
+
+Are your old enough to drink? (Y/N)
+N
+
+
+Borja Rojo, are well informed.
+When you are 18, you will have 3 years left to drink!
+When you are 19, you will have 2 years left to drink!
+When you are 20, you will have 1 years left to drink!This part of the program give you the average of some test grades. 
+Enter the grade you received, or type "Q" to quit: 
+Please enter an appropriate letter grade.
+You entered: 
+a
+You entered: a
+b
+You entered: b
+a
+You entered: a
+c
+You entered: c
+d
+You entered: d
+b
+You entered: b
+a
+You entered: a
+a
+You entered: a
+f
+You entered: f
+a
+You entered: a
+b
+You entered: b
+a
+You entered: a
+a
+You entered: a
+q
+You entered: q
+
+The average of your tests is B-

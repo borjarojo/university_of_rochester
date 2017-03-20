@@ -1,0 +1,36 @@
+Borja Rojo
+brojo@u.rochester.edu
+
+The Mastermind.java file holds the code for this project
+and the README and OUTPUT files contain information on the
+project.
+
+This project was an exercise in creating a program 
+to be able to solve any Mastermind riddle. Process 
+of elimination was the technique used in order to
+narrow down the possible solutions.
+
+The algorithm I used was very simple. The computer queried the
+user to know how many tiles are in the right place.
+Then, I went through every possible combination of
+tiles and marked which ones did not fit the discription.
+The computer continues to queried the user until it has 
+all of its possibilities eliminated.
+
+The technique of implementing this algorithm was keeping a
+2D array of all possible combinations, where the rows held
+all possible combinations for the set of tiles and spaces
+given. Then, another boolean array was created in tandem
+with the possibilities array that held a true or false value
+whose indexes corresponded with the columns of the 
+possibilities array. With these two keys, checking to see
+if a guess by the computer was correct only required some
+querying, and checking and updating the possibilities array
+and the boolean array.
+
+The method used in creating the possibilities array was,
+by using the basic information gathered from the instantiation
+of the Mastermind object, breaking down the corresponding 
+sets of columns into blocks of values that would equal the
+same value as to ensure that all possibilities are covered.
+This is much like the creation of a truth table.

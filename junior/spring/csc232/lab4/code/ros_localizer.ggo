@@ -1,0 +1,4 @@
+package "ros_localization"
+version "1.0"
+purpose "localization .ggo file"
+option "fileName" - "f" string default="localizer_output" optional

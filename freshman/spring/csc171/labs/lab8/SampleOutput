@@ -1,0 +1,24 @@
+Q1
+
+This program tells you the max, min, average, 
+and total number of integers in an entered set.
+
+Please enter a positive integer. Negative integers will end data entry: 
+56
+Please enter a positive integer. Negative integers will end data entry: 
+3
+Please enter a positive integer. Negative integers will end data entry: 
+45
+Please enter a positive integer. Negative integers will end data entry: 
+-9
+Average: 34.666667 Max: 56 Min: 3 Count: 3
+
+Q2
+
+This program calculates factorials with two differet data types, int and long
+
+Please enter an integer for int calculations
+78
+Please enter an integer for long calculations
+50
+Int Calc: 0 Long Calc: -3258495067890909184

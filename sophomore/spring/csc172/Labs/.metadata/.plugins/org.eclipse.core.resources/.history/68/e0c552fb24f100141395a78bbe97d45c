@@ -1,0 +1,23 @@
+
+public class MainTest {
+	public static void main(String[]args){
+		
+		//Create
+		Graph u = new Graph("map", 4, false);
+		
+		Node n1 = new Node("Corner1", 0, 0, 0);
+		Node n2 = new Node("Corner2", 0, 5, 1);
+		Node n3 = new Node("Corner3", 5, 0, 2);
+		Node n4 = new Node("Corner4", 5, 5, 3);
+		
+		Edge e1 = new Edge("Edge1", n1, n2);
+		Edge e2 = new Edge("Edge2", n1, n3);
+		Edge e3 = new Edge("Edge3", n2, n3);
+		Edge e4 = new Edge("Edge4", n2, n4);
+		
+		u.insert(e1);
+		u.insert(e1);
+		u.insert(e1);
+		u.insert(e1);
+	}
+}

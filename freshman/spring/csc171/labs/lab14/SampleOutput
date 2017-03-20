@@ -1,0 +1,215 @@
+This program demonstrates RegEx checking using the
+String method 'matches()'
+
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja
+---------------------------------------------------------------------------------------------------
+Please enter your last name: Rojo
+---------------------------------------------------------------------------------------------------
+Please enter your address: 40 Maple Road
+---------------------------------------------------------------------------------------------------
+Please enter your city: Syracuse
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): NY
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 10678
+---------------------------------------------------------------------------------------------------
+Please enter your email: borja.rojo@gmail.com
+---------------------------------------------------------------------------------------------------
+Final information
+
+First Name: Borja
+Last Name: Rojo
+Address: 40 Maple Road
+City: Syracuse
+State: NY
+Zip-Code: 10678
+Email: borja.rojo@gmail.com
+
+---------------------------------------------------------------------------------------------------
+Please enter your first name: borja
+Error:
+Please enter a name with an uppercase letter at the start
+---------------------------------------------------------------------------------------------------
+Please enter your first name: borjA
+Error:
+Please enter a name with an uppercase letter at the start
+---------------------------------------------------------------------------------------------------
+Please enter your first name: BorjA
+Error:
+Please enter a name with an uppercase letter at the start
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja.
+Error:
+Please enter a name with an uppercase letter at the start
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja
+---------------------------------------------------------------------------------------------------
+Please enter your last name: rojo
+Error:
+Please enter in correct format:
+Xxxxxxxxx or X'Xxxxxxx or Xxxx-Xxxx
+---------------------------------------------------------------------------------------------------
+Please enter your last name: rojO
+Error:
+Please enter in correct format:
+Xxxxxxxxx or X'Xxxxxxx or Xxxx-Xxxx
+---------------------------------------------------------------------------------------------------
+Please enter your last name: RojO
+Error:
+Please enter in correct format:
+Xxxxxxxxx or X'Xxxxxxx or Xxxx-Xxxx
+---------------------------------------------------------------------------------------------------
+Please enter your last name: Rojo.
+Error:
+Please enter in correct format:
+Xxxxxxxxx or X'Xxxxxxx or Xxxx-Xxxx
+---------------------------------------------------------------------------------------------------
+Please enter your last name: Rojo
+---------------------------------------------------------------------------------------------------
+Please enter your address: 40 maple road
+Error:
+Please enter in correct format: ## Xxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your address: 40 Maple road
+Error:
+Please enter in correct format: ## Xxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your address: 40 maple Road
+Error:
+Please enter in correct format: ## Xxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your address: 40 Maple Road
+---------------------------------------------------------------------------------------------------
+Please enter your city: syracuse
+Error:
+Please enter in correct format: Xxxxxxx Xxxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your city: syracusE
+Error:
+Please enter in correct format: Xxxxxxx Xxxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your city: Syracuse.
+Error:
+Please enter in correct format: Xxxxxxx Xxxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your city: Syracuse
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): ny
+Error:
+Please enter in correct format: XX
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): Ny
+Error:
+Please enter in correct format: XX
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): nY
+Error:
+Please enter in correct format: XX
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): NNY
+Error:
+Please enter in correct format: XX
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): NY
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 106899
+Error:
+Please enter in correct format:
+##### for regular zip
+#####-#### for zip+4
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 1068
+Error:
+Please enter in correct format:
+##### for regular zip
+#####-#### for zip+4
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 10689-33
+Error:
+Please enter in correct format:
+##### for regular zip
+#####-#### for zip+4
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 10689-6545
+---------------------------------------------------------------------------------------------------
+Please enter your email: borjarojo.@gmail.com
+Error:
+---------------------------------------------------------------------------------------------------
+Please enter your email: .borjarojo@gmail.com
+Error:
+Email usernames cannot start or end in dots (.)
+---------------------------------------------------------------------------------------------------
+Please enter your email: borja_rojo@gmail.com
+---------------------------------------------------------------------------------------------------
+Final information
+
+First Name: Borja
+Last Name: Rojo
+Address: 40 Maple Road
+City: Syracuse
+State: NY
+Zip-Code: 10689-6545
+Email: borja_rojo@gmail.com
+
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja
+---------------------------------------------------------------------------------------------------
+Please enter your last name: O'Neil
+---------------------------------------------------------------------------------------------------
+Please enter your address: 5 Maplewood Ave
+---------------------------------------------------------------------------------------------------
+Please enter your city: New york
+Error:
+Please enter in correct format: Xxxxxxx Xxxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your city: new York
+Error:
+Please enter in correct format: Xxxxxxx Xxxxxxxx Xxxxx
+---------------------------------------------------------------------------------------------------
+Please enter your city: New Tork
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): NY
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 55555
+---------------------------------------------------------------------------------------------------
+Please enter your email: borja.rojo@gmail.com
+---------------------------------------------------------------------------------------------------
+Final information
+
+First Name: Borja
+Last Name: O'Neil
+Address: 5 Maplewood Ave
+City: New Tork
+State: NY
+Zip-Code: 55555
+Email: borja.rojo@gmail.com
+
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja Rojo
+Error:
+Please enter a name with an uppercase letter at the start
+---------------------------------------------------------------------------------------------------
+Please enter your first name: Borja
+---------------------------------------------------------------------------------------------------
+Please enter your last name: Black-Smith
+---------------------------------------------------------------------------------------------------
+Please enter your address: 38 Highmeadow Road
+---------------------------------------------------------------------------------------------------
+Please enter your city: Danburry
+---------------------------------------------------------------------------------------------------
+Please enter your state (NY): NJ
+---------------------------------------------------------------------------------------------------
+Please enter your zip code (regular or zip+4): 78556
+---------------------------------------------------------------------------------------------------
+Please enter your email: borja.rojo@gmail.com
+---------------------------------------------------------------------------------------------------
+Final information
+
+First Name: Borja
+Last Name: Black-Smith
+Address: 38 Highmeadow Road
+City: Danburry
+State: NJ
+Zip-Code: 78556
+Email: borja.rojo@gmail.com

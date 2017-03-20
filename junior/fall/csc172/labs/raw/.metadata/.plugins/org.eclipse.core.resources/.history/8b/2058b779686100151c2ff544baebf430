@@ -1,0 +1,6 @@
+
+public interface Mastermind {
+	public Mastermind(String[] tokencolors, int positions){
+		
+	}
+}

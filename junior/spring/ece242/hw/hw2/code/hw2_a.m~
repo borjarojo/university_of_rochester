@@ -1,0 +1,22 @@
+%{
+This function produces the DSB-SC for HW2a.
+%}
+function y = hw2_a()
+    %parameters
+    T = .01;            %given
+    t = -.04:.01:.04;   %given
+    
+    %signals
+    m = hw2_m(t, T);    %message
+    
+    f = 300;
+    c = cos(2*pi*f*t);  %carrier
+    
+    %modulated signal
+    y = myDSBSC(m, c);
+    Yr = real(fft(y));
+    Yi = imag(fft(y));
+    
+    figure;
+    subplot(2,2,
+end

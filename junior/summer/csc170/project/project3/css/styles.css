@@ -1,0 +1,155 @@
+/*-----Basics-----*/
+/*	This is where the basic formatting of the doc will mostly take place
+	I will target tags that contain CONTENT, like <p> and <a>, here as a
+	way to set the basic look of the website */
+/* Main Format for the <body> */
+body {
+	background-color: #F6F7BD;
+
+	color: #655643;
+	text-align: justify;
+	font-family: "Times New Roman", Georgia, serif;
+
+	margin: 0px;
+}
+
+/* headings */
+h1, h2, h3 {
+	font-family: Arial, Verdana, sans-serif;
+	color: #80BCA3;
+	margin: 0px 0px 5px;
+}
+
+/* Paragraphs */
+p {
+	text-indent: 25px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+	list-style: square outside none;
+	padding: 0px 40px 0px;
+
+}
+
+/* Heyperlink stuff */
+a:link {
+	color: #E6AC27;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #E6AC27;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #BF4D28;
+	text-decoration: underline;
+}
+
+header a:hover {
+
+	color: #E6AC27;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #E6AC27;
+	text-decoration: underline;
+}
+
+/* Images */
+figure {
+	float: right;
+	margin: 20px
+}
+
+img {
+	display: table-cell;
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
+/* Table */
+
+table {
+	border: 2px solid #80BCA3;
+	margin-bottom: 20px;
+}
+
+
+/*-----Sections-----*/
+/*	This is where I begin to structure my document. I made my document
+	flow rather naturally (header/content/footer). The main grouping I made
+	was the <article> and <aside> under a <div class="middle">. The formating
+	choices are clear below. I use flex. */
+
+/* Header */
+header {
+	background-color: #BF4D28;
+
+	text-align: center;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+
+	position: static;
+}
+
+header p {
+	font-style: italic;
+	text-indent: 0px;
+	margin: 0px;
+}
+
+nav {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+/* span for article and aside */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.middle {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Section, before article */
+section {
+	display: block;
+}
+
+/* Article */
+article {
+	width: 70%;
+}
+
+/* Aside */
+aside {
+	width: 30%;
+	padding-left: 20px;
+}
+
+/* footer */
+footer {
+	background-color: #BF4D28;
+	padding: 10px 0px;
+
+	text-align: center;
+}
+
+footer ul {
+	margin: 0px;
+	list-style-type: none;
+}

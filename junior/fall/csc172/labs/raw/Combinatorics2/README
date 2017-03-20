@@ -1,0 +1,42 @@
+Borja Rojo
+brojo@u.rochester.edu
+
+Partner: Daniel Saltz
+
+Contents in src: MainTest.java
+
+MainTest.java holds all my methods to the Combinatorics 2 lab
+
+The first method I created is the bigIntFact() method, which 
+recursively computes the factorial of a given BigInteger. This
+was extremely useful when designing recursive steps for the other
+methods as I did not have to worry about including the factorial
+within the recursion.
+
+The second method I wrote is the orderIdItem(), which returns how many
+distinct ways you can order a group of items that has multiple
+indistinguishable items in that group. The recursive process of this method
+was to check and see if 1. the last item to be multiplied was reached
+2. check if it was the first pass through and begin the recursion or
+3. apply the recursive step by iterating through the i groups. Details
+can be seen in the comments of my code.
+
+The third method I wrote is the distIndObjToBin(), which returns how many
+ways a group of indistinguishable items can be sorted into a number of
+bins. This method was asked to be written recursively, which isn't exactly
+the case with my method. I only used one return line because I had already
+written a method to compute factorials recursively. This method, although it
+may not look like it, still has recursive algorithms in it. I hope this is
+sufficient, as I wouldn't know another, less tedious way to code this method.
+Unlike my second and fourth methods, there isn't any sequence element to this
+computation.
+
+The fourth method I wrote is the distDisObjToBin(), which returns how many
+ways a group of objects with sets of distinguishable objects within can be
+sorted into a group of bins. Like my second method, This was made recurively
+by first checking for the base case, which is whether or not the end of the
+series was reached. Then, checking to see if it was the start of the method,
+which begins by dividing the top by the bottom, where the bottom is the (m-1)!
+multiplied by the recursive step. Lastly, the recursive step would be reached,
+which is mulitplying the factorials of the different distinguishable group
+sizes.

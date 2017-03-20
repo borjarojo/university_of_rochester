@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>More JavaScript Demos</title>
+	<script src="scripts.js"></script>
+</head>
+<body>
+
+<h1>JavaScript Demos II</h1>
+
+<p>Here is a button that will run a function.</p>
+<!-- The script for this button is in the HEAD of this HTML document -->
+<button onclick="getPrice()">Price</button>
+
+<br><br>
+
+<p>
+	The URL of a web page document<br>
+	<strong>document.URL</strong>:
+	<script>
+		document.write(document.URL);
+	</script>
+</p>
+
+
+<p>
+	The title of a web page document<br>
+	<strong>document.title</strong>:
+	<script>
+		document.write(document.title);
+	</script>
+</p>
+
+<p>
+	The date the web page file was last modified<br>
+	<strong>document.lastModified</strong>:
+	<script>
+		document.write(document.lastModified);
+	</script>
+</p>
+
+<p>
+	An image object<br>
+	<strong>image1.src</strong><br>
+	<img id="myImage" src="tardis.png"><br>
+	<script>
+		document.write(myImage.src);
+	</script>
+</p>
+
+
+<p>
+	A function, tied to a button that changes a node in the <strong>DOM</strong>: 
+	<button onclick="toggleDoc('image1')">Change the Source of Image1</button><br>
+	<img id="image1" src="tardis.png" alt="Doctor">
+</p>
+
+<p>
+	Another button that uses the same function to change a node in the <strong>DOM</strong>:
+	<button onclick="toggleDoc('image2')">Change the Source of Image2</button><br>
+	<img id="image2" src="dalek.jpg" alt="Doctor">
+</p>
+
+ 
+ </body>
+</html>

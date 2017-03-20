@@ -1,0 +1,47 @@
+Borja Rojo
+brojo@u.rochester.edu
+CSC 172
+Daniel Saltz
+
+Run steps: like the last lab, this lab requires reading a file. Therefore, run
+this in Eclipse. Make sure that "zipcodes.csv" is in the Java Project folder.
+
+Output
+
+Hashtable size is 43586
+
+---City lookup---
+
+Enter a zipcode to look up a city: no
+Incorrect input. Please enter a proper zipcode: 90210
+90210 is the zipcode for Beverly Hills, CA. 
+Would you like to lookup another city? If not, enter quit: yes
+
+Enter a zipcode to look up a city: 06870
+6870 is the zipcode for Old Greenwich, CT. 
+Would you like to lookup another city? If not, enter quit: sure
+
+Enter a zipcode to look up a city: 14627
+14627 is the zipcode for Rochester, NY. 
+Would you like to lookup another city? If not, enter quit: more for errors
+
+Enter a zipcode to look up a city: this should cause and error
+Incorrect input. Please enter a proper zipcode: 06830
+6830 is the zipcode for Greenwich, CT. 
+Would you like to lookup another city? If not, enter quit: quit
+
+---Frequency lookup---
+
+Enter a city to look up how may zipcodes it has: Rochester, NY
+Rochester, NY has 47 zipcodes. 
+Would you like to lookup more? If not, enter quit: Los Angeles, CA
+
+Enter a city to look up how may zipcodes it has: Los Angeles, CA
+Los Angeles, CA has 104 zipcodes. 
+Would you like to lookup more? If not, enter quit: anything else
+
+Enter a city to look up how may zipcodes it has: asd;
+This city does not exsist. Please enter an exsisting city (City, ST): City, ST
+This city does not exsist. Please enter an exsisting city (City, ST): Rochester, NY
+Rochester, NY has 47 zipcodes. 
+Would you like to lookup more? If not, enter quit: quit

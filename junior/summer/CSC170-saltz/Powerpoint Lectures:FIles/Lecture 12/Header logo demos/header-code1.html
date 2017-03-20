@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Header Code Demo 1</title>
+	<style>
+	/* Here are some suggested, but totally optional styles... */
+	header { 
+		background-color: #eee;
+		padding: 20px 20px 5px;
+	}
+
+	/*	ANCHOR tags are typically "inline" but when used like this 
+		(in the header) you want it to be big and boxy, so set it 
+		to BLOCK or INLINE-BLOCK */
+	header a { display: inline-block; }
+	header a:hover { opacity: 0.7; } /* ...nice feedback for the user */
+
+	/* This might be a bad idea... */
+	.logo { 
+		width: 100%; 
+		max-width: 172px; /* ...set this to the "real" width of the image */
+	}
+
+	.lorem {  /* ...for demo only; get rid of this class */
+		border: 1px solid hotpink;
+		padding: 0 15px;
+	}
+	</style>
+</head>
+<body>
+
+	<!-- The HEADER element will go on every page in your Project 3 website, exactly like this -->
+	<header>
+		<a class="lorem" href="index.html">
+			<h1>
+				<img class="logo" src="logo1.png" alt="Your Name Here">
+				<br> <!-- A BREAK tag, really? -->
+				Your Name Here
+			</h1>
+		</a>
+		<p>Subtitle here - blah blah blah</p>
+	</header>
+
+	<p>The key ingredients in the HEADER:</p>
+	<ul>
+		<li>The HEADER element - for semantic purposes</li>
+		<li>The H1 element - for semantic purposes</li>
+		<li>The ANCHOR element that wraps the H1 - this is a common practice; users know to click whatever's in the top-left to go back "home"</li>
+		<li>Content inside the H1 element: may contain words and/or an image</li>
+		<li>A subtitle - some text that adds more information about the website; typically, not clickable (not inside the ANCHOR element)</li>
+	</ul>
+
+</body>
+</html>

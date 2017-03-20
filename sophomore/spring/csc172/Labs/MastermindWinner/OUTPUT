@@ -1,0 +1,79 @@
+Author: Borja Rojo
+
+OUTPUT
+
+Both final guesses are correct, but don't take my word for it, try it yourself.
+
+Would you like to play? [yes:1 , no:0] - 1
+How many slots will be used? Enter: 5
+
+How many colors will be used? Enter an integer: 6
+
+What colors will be used?
+Color 1: blue
+Color 2: red
+Color 3: yellow
+Color 4: purple
+Color 5: orange
+Color 6: green
+Guessing...
+blue blue blue blue blue 
+How many colors are right? How many are in the right place? 0
+
+Guessing...
+red red red red red 
+How many colors are right? How many are in the right place? 2
+
+Guessing...
+red red yellow yellow yellow 
+How many colors are right? How many are in the right place? 3
+
+Guessing...
+red red yellow purple purple 
+How many colors are right? How many are in the right place? 2
+
+Guessing...
+red red purple yellow orange 
+How many colors are right? How many are in the right place? 4
+
+Guessing...
+red red purple yellow green 
+How many colors are right? How many are in the right place? 3
+
+Guessing...
+red red orange yellow orange 
+How many colors are right? How many are in the right place? 4
+
+-Final Guess-
+red red green yellow orange 
+
+Would you like to play? [yes:1 , no:0] - 1
+How many slots will be used? Enter: 3
+
+How many colors will be used? Enter an integer: 4
+
+What colors will be used?
+Color 1: pink
+Color 2: white
+Color 3: sky
+Color 4: seven
+Guessing...
+pink pink pink 
+How many colors are right? How many are in the right place? 1
+
+Guessing...
+pink white white 
+How many colors are right? How many are in the right place? 0
+
+Guessing...
+white pink sky 
+How many colors are right? How many are in the right place? 1
+
+Guessing...
+white sky pink 
+How many colors are right? How many are in the right place? 3
+
+-Final Guess-
+white sky pink 
+
+Would you like to play? [yes:1 , no:0] - 0

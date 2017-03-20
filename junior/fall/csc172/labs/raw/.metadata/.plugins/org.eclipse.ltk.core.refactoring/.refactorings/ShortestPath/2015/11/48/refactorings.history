@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ShortestPath/graph9.62&apos; to &apos;graph9.62.txt&apos;" description="Rename resource &apos;graph9.62&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="graph9.62" name="graph9.62.txt" stamp="1448224914093" updateReferences="true"/>
+</session>

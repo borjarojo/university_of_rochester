@@ -1,0 +1,7 @@
+
+public class MapReader {
+	public int vertCount;
+	public int edgeCount;
+	
+	
+}

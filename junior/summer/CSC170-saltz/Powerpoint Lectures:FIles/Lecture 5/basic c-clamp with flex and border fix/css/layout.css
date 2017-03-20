@@ -1,0 +1,16 @@
+/*	*************************************
+	C-Clamp styles
+	************************************* */
+.container {
+	margin: 10px auto;
+	width: 90%;
+	max-width: 960px; 
+}
+
+/*	make contained block elements line-up
+	side-by-side... */
+.wrapper { display: flex; }
+
+/*	optional widths... */
+.wrapped-main { width: 65%; }
+.wrapped-sidebar { width: 35%; }

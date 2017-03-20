@@ -1,0 +1,12 @@
+/*
+ * Author: Borja Rojo
+ * Project 4
+ * CSC 172
+ */
+import java.util.*;
+
+public class MapReader {
+	public int vertCount;
+	
+	
+}

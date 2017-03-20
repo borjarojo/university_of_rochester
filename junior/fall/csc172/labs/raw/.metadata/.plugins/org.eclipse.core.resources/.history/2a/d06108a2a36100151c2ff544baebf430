@@ -1,0 +1,122 @@
+
+
+public class Codebreaker implements Mastermind {
+	
+	String[] colors;
+	int pos;
+	int totalGuess;
+	
+	int[][] codes;
+	int[][] guesses;
+	
+	int[] currentGuess;
+	
+	public Codebreaker(String[] tokencolors, int positions){
+		colors = tokencolors;
+		pos = positions;
+		totalGuess = (int) Math.pow(colors.length, pos);
+		//Create an array that can hold all of the possible solutions
+		codes = new int[totalGuess][pos];
+		
+		/* Fill array
+		 * I used the algorthim of transforming
+		 * one number of a certain base to the 
+		 * base of another number. The base is 
+		 * set to be the color amount, and because
+		 * of how the system is set, the numbers
+		 * run from 0 to the end of the array.
+		 */
+		for(int i = 0; i < totalGuess; i++){
+			int x = i;
+			int quad;
+			int quo;
+			for(int j = 0; j < pos; j++){
+				quad = x % colors.length;
+				quo = x / colors.length;
+				codes[i][j] = quad;
+				x = quo;
+			}
+		}
+		
+		//set guesses to the codes
+		guesses = codes;
+		
+		//create the starting guess, 
+		//always with half of the first 
+		//color and half of the second
+		currentGuess = new int[pos];
+		for(int i = 0; i < pos/2; i++){
+			currentGuess[i] = 0;
+		}
+		for(int i = pos/2; i < pos; i++ ){
+			currentGuess[i] = 1;
+		}
+	}
+	//Required methods
+
+	public void response(int colorsRightPositionWrong,
+			int positionsAndColorRight) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < totalGuess; i++){
+			if(compare(currentGuess, guesses[i])){
+				
+			}
+		}
+
+	}
+
+	public void newGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String[] nextMove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	//My methods
+	
+	public int[] compareGuesses(int[] first, int[] second){
+		int white;
+		for(int i = 0; i < pos; i++){
+			
+		}
+		
+		return second;
+	}
+	
+	public int colorCount(int[] guess, int color){
+		int count = 0;
+		for(int i = 0; i < pos; i++){
+			if(guess[i] == color)
+				count++;
+		}
+		return count;
+	}
+	
+	public void printCodes(){
+		for(int i = 0; i < totalGuess; i++){
+			for(int j = 0; j < pos; j++){
+				System.out.print(codes[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void printGuesses(){
+		for(int i = 0; i < totalGuess; i++){
+			for(int j = 0; j < pos; j++){
+				System.out.print(guesses[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void printCurrentGuess(){
+		for(int i = 0; i < pos; i++){
+			System.out.print(currentGuess[i] + " ");
+		}
+		System.out.println();
+	}
+}

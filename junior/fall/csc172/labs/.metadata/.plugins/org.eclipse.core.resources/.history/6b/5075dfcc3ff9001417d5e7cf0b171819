@@ -1,0 +1,6 @@
+
+public class LinkedList<T> {
+	public void insert(T x);
+	public void delete(T x);
+	
+}

@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Borja Rojo\
+CSC 172\
+Project 3 - WordFinder\
+\
+NOTICE: This is meant to run in the command line, when the java files are in the src made by eclipse and the .txt files are located in the previous directory. I did this by adding \'93../\'93 to the command line arguments within my main method of WordFinder.java. this is important for running correctly.\
+\
+SO TO RUN, IN THE COMMAND LINE, ENTER THE src DIRECTORY, COMPILE WordFinder.java, AND RUN AS ASKED IN THE PROJECT DESCRIPTION\
+\
+Explanation:\
+\
+My code is not very complicated at all. I used my implantation of my Hash Table for my lab with some optimization changes. One of the main changes was with my lookup() method, which was created in order to check if a word was legal. My lookup() method was implemented specifically for this project. The issue that i had was that my implantation require a full traversal of the the hash table. I then realized i needed to use the heuristic for lookup, where if a null cell is located, then the item is not there. I greatly cutout down my runtime by changing this.\
+\
+The files in my project are WordFinder.java, Puzzle.java, and HashTable.java. WordFinder.java is my main method. Puzzle.java is a class that contains and traverses the puzzle given in the command line. HashTable.java is my lab implantation of a Hash Table with the added lookup() method mentioned earlier.\
+\
+The way Puzzle.java works is, after tokenizing the read file, it has a getString() method that takes 4 ints, a row, a column, and orientation, and a length int. Those parameters tell the method to traverse the puzzle at a character, located for the row and column, at an orientation, applied with a switch/case (look at comments for more info) for a certain length of a word. Then it returns the word at that specification. If a word would go outside of the puzzle, then the method returns null. I use this to get a word in a puzzle, which will then be checked against the HashTable that contains all the legal words.\
+\
+Then, as explained before, I look up the found word. If it is null, i don\'92t look up. If it\'92s found, it\'92s added to a sorted list. This is done with a java standard library class. Then when all the possible words are found in the list by checking every letter for every orientation for every length, then the legal ones are added to a sorted list. Then those words are written to a file. }

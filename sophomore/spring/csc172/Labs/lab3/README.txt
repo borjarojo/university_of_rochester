@@ -1,0 +1,3 @@
+Borja RojoDue February 1, 2014CSC 172Lab 3Lab Partner : Daniel SaltzJAVA FILES : MyDoubleNode, MyDoubleLinkedList, LinkedList, MainTest
+
+In this lab, I created a linked list with doubly linked nodes. This means that every node carries a pointer to the next and previous node. This allows us to go both backwards and forwards on the list and manipulate the list that way. I implemented the same interface as  Lab 2, but rewriten to consider the advantage of having a forwards and backwards pointer. There is a node class, a linked list interface, and linked list class, and a test class.HOW TO RUN : Compile in Eclipse and Run.

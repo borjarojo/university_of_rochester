@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 10 - JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="container">
+
+	<h1>JavaScript Examples</h1>
+
+	<div class="box">
+
+		<h2>Example 1: Mouseover</h2>
+		<p>This is an example of inline JavaScript using "event attributes" like <strong>onmouseover</strong> and <strong>onmouseout</strong>.</p>
+		<figure>
+			<!-- PART 3: Embed an image element here that changes "onmouseover" 
+				and then changes back "onmouseout" -->
+			<img src="images/cat1.jpg" alt="cat" onmouseover="this.src='images/cat2.jpg'" onmouseout="this.src='images/cat1.jpg'">
+			<figcaption>Hover your mouse over this image</figcaption>
+		</figure>
+
+	</div><!--.box-->
+
+	<div class="box">
+
+		<h2>Example 2: JavaScript getElementById()</h2>
+		<p>This is an example of JavaScript grabbing an element in the DOM and altering its properties.</p>
+		<figure>
+			<!-- PART 4: Add an ID to the IMG element and another ID to the BUTTON element-->
+			<img src="images/cat1.jpg" alt="cat" id="fig2">
+			<button id="button">Click to show/hide the kitty</button>
+		</figure>
+
+	</div><!--.box-->
+
+</div><!--.container-->
+
+<!-- Part 2: Here, using the <script> tag, connect an external JavaScript 
+	file named: js/scripts.js -->
+<script src='js/scripts.js'>
+</script>
+
+<!-- PART 1: Here, add an embedded JavaScript block using the <script> tag, and write a line of 
+	 JavaScript that pops open a dialog box that says a message -->
+<script type="text/javascript">
+	//alert('Hello World!')
+</script>
+</body>
+</html>

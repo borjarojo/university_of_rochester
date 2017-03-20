@@ -1,0 +1,25 @@
+Borja Rojo
+brojo@u.rochester.edu
+Daniel Saltz
+
+Compile and run in the command line
+
+OUTPUT
+
+-Lookup-
+Looking up 11: Exists
+Looking up 6: Does not Exist
+Looking up 22: Exists
+
+-Printing-
+Printing PreOrder: 12 5 3 2 10 7 11 20 14 22 21 23 
+Printing In Order: 2 3 5 7 10 11 12 14 20 21 22 23 
+Printing Post Order: 2 3 7 11 10 5 14 21 23 22 20 12 
+
+-Deletions-
+Original: 2 3 7 11 10 5 14 21 23 22 20 12 
+Deleting 20: 2 3 7 11 10 5 14 23 22 21 12 
+Deleting 21: 2 3 7 11 10 5 14 23 22 12 
+Deleting 3: 2 7 11 10 5 14 23 22 12 
+Deleting 2: 7 11 10 5 14 23 22 12 
+Deleting 10: 7 11 5 14 23 22 12 

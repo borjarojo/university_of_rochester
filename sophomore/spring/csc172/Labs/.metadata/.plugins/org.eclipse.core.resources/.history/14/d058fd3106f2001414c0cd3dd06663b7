@@ -1,0 +1,12 @@
+import javax.swing.JFrame;
+
+/*
+ * Author: Borja Rojo
+ * Project 4
+ * CSC 172
+ */
+
+public class MapFrame extends JFrame{
+
+
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 9 - HTML Forms</title>
+</head>
+
+<body>
+	<form method="post" action="form-processor.php">
+		<label for="name">Name:</label><input type="text" name="name" id="name"><br><br>
+		<label for="email">Email:</label><input type="email" name="email" id="email"><br><br>
+		<label for="tele">Telephone:</label><input type="tel" name="tele" id="tele"><br><br>
+
+		<fieldset>
+			<legend>Browsers</legend>
+			What browsers do you use?<br>
+			<input type="checkbox" name="checkFirefox" id="checkFirefox" value="Firefox">Firefox<br>
+			<input type="checkbox" name="checkChrome" id="checkChrome" value="Chrome">Chrome<br>
+			<input type="checkbox" name="checkSafari" id="checkSafari" value="Safari">Safari<br>
+			<input type="checkbox" name="checkIe" id="checkIe" value="Ie">Internet Explorer<br>
+
+			<br>
+			What is your favorite browser?<br>
+			<input type="radio" name="browserSelect" id="firefox-select" value="Firefox">Firefox<br>
+			<input type="radio" name="browserSelect" id="chrome-select" value="Chrome">Chrome<br>
+			<input type="radio" name="browserSelect" id="safari-select" value="Safari">Safari<br>
+			<input type="radio" name="browserSelect" id="Ie-select" value="Ie">Internet Explorer<br>
+		</fieldset>
+
+		<br>
+		<label for="comments">Message<label><br>
+		<textarea name="comments" id="comments"></textarea><br>
+
+		<br>
+		<input type="submit" name="submit" id="submit" value="Send">
+	</form>
+
+
+</body>
+</html>

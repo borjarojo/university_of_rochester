@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 7 - HTML Forms</title>
+    <style>
+    	fieldset{ margin-top: 30px; }
+    </style>
+</head>
+<body>
+	<h1>Contact Form</h1>
+	<form method="post" action="form-processor.php">
+		<label for="email"> E-mail:
+		  	<input type="email" name="email" id="email"><br><br>
+		</label>
+		<label for="name"> Name:
+	    	<input type="text" name="name" id="name"><br><br>
+	    </label>
+	    <label for="phone"> Phone Number:
+	    	<input type="tel" name="phone" id="phone"><br>
+	    </label>
+
+	    <fieldset> 
+			<legend>Browser Preference</legend>
+			<h3>What broswers do you use?</h3>
+			<label for="chrome"></label>
+				<input type="checkbox" name="chrome" value="Chrome" id="chrome"> Chrome<br>
+			<label for="Ie"></label>
+				<input type="checkbox" name="Ie" value="Internet Explorer" id="Ie"> Internet Explorer<br>
+			<label for="safari"></label>
+				<input type="checkbox" name="safari" value="Safari" id="safari"> Safari<br>
+			<label for="firefox"></label>
+				<input type="checkbox" name="firefox" value="Firefox" id="firefox"> Firefox
+
+			<h3>What is your favorite browser?</h3>
+			<label for="Rchrome"></label>
+				<input type="radio" name="browserSelect" value="Chrome" id="Rchrome"> Chrome<br>
+			<label for="Rfirefox"></label>
+				<input type="radio" name="browserSelect" value="Firefox" id="Rfirefox"> Firefox<br>
+			<label for="Rsafari"></label>
+				<input type="radio" name="browserSelect" value="Safari" id="Rsafari"> Safari<br>
+			<label for="RIe"></label>
+				<input type="radio" name="browserSelect" value="Internet Explorer" id="RIe"> Internet Explorer
+		</fieldset>
+
+		<h4>Message</h4>
+		<label for="comments">	
+			<textarea name="comments" id="comments"></textarea>
+		</label><br>
+		<label for="submit">	
+			<input type="submit" name="submit" id="submit"></input>
+		</label>
+	</form>
+
+</body>
+</html>

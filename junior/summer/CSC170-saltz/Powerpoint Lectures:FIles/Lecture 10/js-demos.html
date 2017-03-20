@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript - Demos</title>
+</head>
+<body>
+
+<h1>JavaScript Demos</h1>
+
+<!--	**************************************************************
+		First, a plain ol' embedded script element with an alert 
+		dialog box... 
+		************************************************************** -->
+<script>
+	alert("Hi. I'm annoying.")
+</script>
+
+<!--	**************************************************************
+		Then, an example of how order matters...
+		************************************************************** -->
+<p>Then, this appears first</p>
+<script>alert("This appears second");</script>
+<p>This appears third</p>
+<script>alert("This appears forth");</script>
+
+<!--	**************************************************************
+		Then, examples of the JavaScript prompt dialog...
+		************************************************************** -->
+<script>
+var firstName = prompt("Enter your First Name");
+var quantity = prompt("How many things do you want?", "0");
+alert("Hello " + firstName + ".\nYou will get " + quantity + " things.")
+</script>
+
+<!--	**************************************************************
+		Then, a button that does stuff...
+		************************************************************** -->
+<button id="button1">This is a button that has an "event listener" attached</button><br><br>
+
+<script>
+var myButton1 = document.getElementById("button1");
+myButton1.addEventListener("click", doTheThing);
+
+function stupidGame() {
+	var again = confirm("Play again?");
+	while (again == true) {
+		again = confirm("Okay, play again");
+	}
+	alert("See you another time");
+}
+
+function doTheThing() {
+	myButton1.innerHTML = "My button was clicked";
+	stupidGame();
+}
+
+</script>
+
+<!--	**************************************************************
+		Then, this link appears with an event attached...
+		************************************************************** -->
+Here's an example of a JavaScript event, "onmouseover" being attached to an anchor tag:<br>
+<a href="index.html" onmouseover="alert('Click to go home')">Home</a> (dumb joke)<br><br>
+
+</body>
+</html>

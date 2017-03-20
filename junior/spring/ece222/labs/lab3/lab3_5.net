@@ -1,0 +1,15 @@
+*Simplified Equivalent Amplifier
+
+* /Users/borjarojo/Documents/university_of_rochester/junior/secondsemester/ece222/labs/lab3/lab32.asc
+
+*Components
+Vs N002 0 V
+Rs N003 N002 10k
+Rif N004 0 29.016
+Cc1 N004 N003 10µ
+Io N001 N006 -3.92*I(Rif)
+Rof N001 N006 262.866
+C1 N001 N005 10µ
+R2 N005 N006 1k
+.backanno
+.end

@@ -1,0 +1,17 @@
+Borja Rojo
+brojo@u.rochester.edu
+Daniel Saltz
+
+This lab was about constructing a Binary Search Tree class with many methods that
+pertain to the BST. This includes insertion, deletion, lookup, and three different kinds of 
+printing. The insertion method inserts data that is not already there, meaning it checks
+to see if the lookup is true for the data being inserted before it is inserted. The
+deletion implements 3 different strategies to delete a node as 3 different kinds of nodes
+exist. A leaf node only required that it's parent no longer points to it. A single child
+node requires analysis of it's surrounding branches and uses that to properly cut 
+itself out of the tree. The double child node deletion is quite a bit more involved
+as it requires data replacement out the leftmost child of the nodes right child and 
+deletion of the leftmost child of the right child. The print methods are of three types:
+Preorder, Inorder, and Postorder. The difference between the three is when the printing
+of the data is done when searching through a tree. The methods implemented are left-to-right
+oriented.
